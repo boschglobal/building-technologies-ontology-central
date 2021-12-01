@@ -1,0 +1,99 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:core:DigitalTwin;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Abstract Digital Twin",
+    "description": "The basic digital twin interface defining all common properties.",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:core:AbstractTwin;2"
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "identifier",
+            "displayName": "Identifier",
+            "description": "The identifier of the instance of the digital twin, which is unique throughout the system.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "name",
+            "displayName": "Name",
+            "description": "The name of the digital twin.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "displayName",
+            "displayName": "Display Name",
+            "description": "The display name of the digital twin.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "description",
+            "displayName": "Description",
+            "description": "The description of the digital twin.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "status",
+            "displayName": "Status",
+            "description": "The status of the digital twin.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Component",
+            "name": "location",
+            "displayName": "Location",
+            "description": "Geographic coordinate as point.",
+            "schema": "dtmi:com:bosch:bt:foundation:core:GeoLocation;2"
+        },
+        {
+            "@type": "Property",
+            "name": "externalIds",
+            "displayName": "External identifiers",
+            "description": "External identifiers of a twin (mapping of ids).",
+            "schema": {
+                "@type": "Map",
+                "mapKey": {
+                    "name": "name",
+                    "displayName": "Name",
+                    "description": "Qualifier name of the external id",
+                    "schema": "string"
+                },
+                "mapValue": {
+                    "name": "id",
+                    "displayName": "Identifier",
+                    "description": "External identifier",
+                    "schema": "string"
+                }
+            },
+            "writable": true
+        },
+        {
+            "@type": "Property",
+            "name": "tags",
+            "displayName": "Tags",
+            "description": "The tags associated with the digital twin.",
+            "writable": true,
+            "schema": {
+                "@type": "Map",
+                "mapKey": {
+                    "name": "name",
+                    "schema": "string"
+                },
+                "mapValue": {
+                    "name": "value",
+                    "schema": "string"
+                }
+            }
+        }
+    ]
+}

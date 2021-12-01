@@ -1,0 +1,11 @@
+{
+	"@id": "dtmi:com:bosch:bt:foundation:core:Role;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Abstract Role",
+	"description": "Definition of a role of digital twin in the given domain context.",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+		"dtmi:com:bosch:bt:foundation:core:DigitalTwin;2" 
+	]
+}

@@ -1,0 +1,27 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:ConventionalLine;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Conventional Line",
+    "description": "conventional line connects a group of conventional peripherals",
+    "extends": [
+        "dtmi:com:bosch:bt:fire:Network;2"
+    ],
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The conventional line is connected to a conventional zone module.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:ConventionalZoneModule;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,193 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Air Handling Unit",
+	"description": "Air Handling Unit heats and/or cools air.",
+	"extends": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2",
+	"schemas": [
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:HeatingMethod;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "None",
+					"displayName": "None",
+					"enumValue": "None"
+				},
+				{
+					"name": "Electric",
+					"displayName": "Electric",
+					"enumValue": "Electric"
+				},
+				{
+					"name": "HotWater",
+					"displayName": "Hot Water",
+					"enumValue": "HotWater"
+				},
+				{
+					"name": "Steam",
+					"displayName": "Steam",
+					"enumValue": "Steam"
+				},
+				{
+					"name": "Gas",
+					"displayName": "Gas",
+					"enumValue": "Gas"
+				},
+				{
+					"name": "DirectExpansion",
+					"displayName": "Direct Expansion",
+					"enumValue": "DirectExpansion"
+				},
+                {
+                    "name": "Other",
+                    "displayName": "Other",
+                    "enumValue": "Other"
+                }
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:CoolingMethod;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "None",
+					"displayName": "None",
+					"enumValue": "None"
+				},
+				{
+					"name": "ChilledWater",
+					"displayName": "Chilled Water",
+					"enumValue": "ChilledWater"
+				},
+				{
+					"name": "DirectExpansion",
+					"displayName": "Direct Expansion",
+					"enumValue": "DirectExpansion"
+				},
+                {
+                    "name": "Other",
+                    "displayName": "Other",
+                    "enumValue": "Other"
+                }
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:AirVolumeType;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "ConstantVolume",
+					"displayName": "Constant Air Volume",
+					"enumValue": "ConstantVolume"
+				},
+				{
+					"name": "VariableVolume",
+					"displayName": "Variable Air Volume",
+					"enumValue": "VariableVolume"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:ZoneDeliveryType;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "DirectZone",
+					"displayName": "Direct Zone",
+					"enumValue": "DirectZone"
+				},
+				{
+					"name": "VavZone",
+					"displayName": "VAV Terminal Units",
+					"enumValue": "VavZone"
+				},
+				{
+					"name": "ChilledBeamZone",
+					"displayName": "Chilled Beam Terminal Units",
+					"enumValue": "ChilledBeamZone"
+				},
+				{
+					"name": "MultiZone",
+					"displayName": "Multiple Zones",
+					"enumValue": "MultiZone"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:DuctWorkConfiguration;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "SingleDuct",
+					"displayName": "Single Duct",
+					"enumValue": "SingleDuct"
+				},
+				{
+					"name": "DualDuct",
+					"displayName": "Dual Duct",
+					"enumValue": "DualDuct"
+				},
+				{
+					"name": "TripleDuct",
+					"displayName": "Triple Duct",
+					"enumValue": "TripleDuct"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:DeckType;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "HotDeck",
+					"displayName": "Hot Deck",
+					"enumValue": "HotDeck"
+				},
+				{
+					"name": "ColdDeck",
+					"displayName": "Cold Deck",
+					"enumValue": "ColdDeck"
+				},
+				{
+					"name": "NeutralDeck",
+					"displayName": "Neutral Deck",
+					"enumValue": "NeutralDeck"
+				}
+			]
+		}
+	],
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "AirVolumeType",
+			"displayName": "Air Volume Type",
+			"description": "The ability of the AHU to adjust the volume of air flow.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:AirVolumeType;2"
+		},
+		{
+			"@type": "Property",
+			"name": "ZoneDeliveryType",
+			"displayName": "Zone Delivery Type",
+			"description": "The system used by the AHU to deliver air to the zones.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:ZoneDeliveryType;2"
+		},
+		{
+			"@type": "Property",
+			"name": "DuctWorkConfiguration",
+			"displayName": "Duct Work Configuration",
+			"description": "The duct work configuration used by the AHU.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:DuctWorkConfiguration;2"
+		}
+	]
+}

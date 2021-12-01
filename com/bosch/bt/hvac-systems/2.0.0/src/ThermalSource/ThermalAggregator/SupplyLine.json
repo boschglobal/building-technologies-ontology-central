@@ -1,0 +1,8 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:SupplyLine;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Supply Line",
+	"description": "Supply line is a thermal aggregator used for heating and/or cooling the building.",
+	"extends": "dtmi:com:bosch:bt:HVAC:ThermalAggregator;2"
+}

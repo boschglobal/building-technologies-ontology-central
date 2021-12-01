@@ -1,0 +1,486 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:point:DataPoint;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Abstract Data Point",
+    "description": "Abstract data point represent type and value for example of a digital or analog sensor or actuator.",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+        "dtmi:com:bosch:bt:foundation:core:DigitalTwin;2"
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:foundation:point:DataPoint:EffectiveBoundTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "None",
+                    "displayName": "None",
+                    "enumValue": "None"
+                },
+                {
+                    "name": "In",
+                    "displayName": "In",
+                    "enumValue": "In"
+                },
+                {
+                    "name": "Out",
+                    "displayName": "Out",
+                    "enumValue": "Out"
+                }
+            ]
+        },
+        {
+            "@id": "dtmi:com:bosch:bt:foundation:point:DataPoint:FunctionTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "displayName": "Point Function Types",
+            "description": "Classifies the point as a sensor, command, setpoint or state",
+            "enumValues": [
+                {
+                    "name": "Sensor",
+                    "enumValue": "Sensor",
+                    "displayName": "Sensor",
+                    "description": "Input, AI/BI, sensor"
+                },
+                {
+                    "name": "Command",
+                    "enumValue": "Command",
+                    "displayName": "Command",
+                    "description": "Output, AO/BO, actuator, command"
+                },
+                {
+                    "name": "Setpoint",
+                    "enumValue": "Setpoint",
+                    "displayName": "Setpoint",
+                    "description": "Setpoint, internal control variable, schedule, soft point"
+                },
+                {
+                    "name": "Virtual",
+                    "enumValue": "Virtual",
+                    "displayName": "Virtual",
+                    "description": "Calculated value, point not exist on the field side"
+                }
+            ]
+        },
+        {
+            "@id": "dtmi:com:bosch:bt:foundation:point:DataPoint:MediumTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "Air",
+                    "displayName": "Air",
+                    "enumValue": "Air"
+                },
+                {
+                    "name": "Water",
+                    "displayName": "Water",
+                    "enumValue": "Water"
+                },
+                {
+                    "name": "Steam",
+                    "displayName": "Steam",
+                    "enumValue": "Steam"
+                },
+                {
+                    "name": "Gas",
+                    "displayName": "Gas",
+                    "enumValue": "Gas"
+                },
+                {
+                    "name": "Liquid",
+                    "displayName": "Liquid",
+                    "enumValue": "Liquid"
+                }
+                
+            ]
+        },
+        {
+            "@id": "dtmi:com:bosch:bt:foundation:point:DataPoint:SectionType;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "Discharge",
+                    "displayName": "Discharge",
+                    "enumValue": "Discharge",
+                    "description": "Duct for air leaving an equipment"
+                },
+                {
+                    "name": "Economizer",
+                    "displayName": "Economizer",
+                    "enumValue": "Economizer",
+                    "description": "Duct to access fresh outside air only for economizing, not ventilation"
+                },
+                {
+                    "name": "Exhaust",
+                    "displayName": "Exhaust",
+                    "enumValue": "Exhaust",
+                    "description": "Duct used to expel air back outside"
+                },
+                {
+                    "name": "Flue",
+                    "displayName": "Flue",
+                    "enumValue": "Flue",
+                    "description": "Duct for exhausting combustion"
+                },
+                {
+                    "name": "Inlet",
+                    "displayName": "Inlet",
+                    "enumValue": "Inlet",
+                    "description": "Duct with air entering an equipment"
+                },
+                {
+                    "name": "Mixed",
+                    "displayName": "Mixed",
+                    "enumValue": "Mixed",
+                    "description": "Duct where fresh outside air and return air is mixed together"
+                },
+                {
+                    "name": "Outside",
+                    "displayName": "Outside",
+                    "enumValue": "Outside",
+                    "description": "Duct to access fresh outside air for both ventilation and economizer"
+                },
+                {
+                    "name": "Return",
+                    "displayName": "Return",
+                    "enumValue": "Return",
+                    "description": "Duct returning air back to equipment"
+                },
+                {
+                    "name": "Ventilation",
+                    "displayName": "Ventilation",
+                    "enumValue": "Ventilation",
+                    "description": "Duct to access fresh outside air only for ventilation, not economizing"
+                },
+                {
+                    "name": "Bypass",
+                    "displayName": "Bypass",
+                    "enumValue": "Bypass"
+                },
+                {
+                    "name": "Entering",
+                    "displayName": "Entering",
+                    "enumValue": "Entering"
+                },
+                {
+                    "name": "External",
+                    "displayName": "External",
+                    "enumValue": "External"
+                },
+                {
+                    "name": "Internal",
+                    "displayName": "Internal",
+                    "enumValue": "Internal"
+                },
+                {
+                    "name": "Leaving",
+                    "displayName": "Leaving",
+                    "enumValue": "Leaving"
+                },
+                {
+                    "name": "Makeup",
+                    "displayName": "Makeup",
+                    "enumValue": "Makeup"
+                },
+                {
+                    "name": "Zone",
+                    "displayName": "Zone",
+                    "enumValue": "Zone"
+                }
+            ]
+        },
+        {
+            "@id": "dtmi:com:bosch:bt:foundation:point:DataPoint:MeasurementTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "Absolute",
+                    "displayName": "Absolute",
+                    "enumValue": "Absolute"
+                },
+                {
+                    "name": "Relative",
+                    "displayName": "Relative",
+                    "enumValue": "Relative"
+                },
+                {
+                    "name": "Delta",
+                    "displayName": "Delta",
+                    "enumValue": "Delta"
+                }
+            ]
+        },
+        {
+            "@id": "dtmi:com:bosch:bt:foundation:point:PointType:Types;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "displayName": "Point Types",
+            "description": "Types of data points",
+            "enumValues": [
+                {
+                    "name": "Volume",
+                    "enumValue": "Volume",
+                    "displayName": "Volume"
+                },
+                {
+                    "name": "Torque",
+                    "enumValue": "Torque",
+                    "displayName": "Torque"
+                },
+                {
+                    "name": "Speed",
+                    "enumValue": "Speed",
+                    "displayName": "Speed"
+                },
+                {
+                    "name": "Pressure",
+                    "enumValue": "Pressure",
+                    "displayName": "Pressure"
+                },
+                {
+                    "name": "Motion",
+                    "enumValue": "Motion",
+                    "displayName": "Motion"
+                },
+                {
+                    "name": "Luminance",
+                    "enumValue": "Luminance",
+                    "displayName": "Luminance"
+                },
+                {
+                    "name": "Illuminance",
+                    "enumValue": "Illuminance",
+                    "displayName": "Illuminance"
+                },
+                {
+                    "name": "Humidity",
+                    "enumValue": "Humidity",
+                    "displayName": "Humidity"
+                },
+                {
+                    "name": "Frequency",
+                    "enumValue": "Frequency",
+                    "displayName": "Frequency"
+                },
+                {
+                    "name": "Current",
+                    "enumValue": "Current",
+                    "displayName": "Current"
+                },
+                {
+                    "name": "Temperature",
+                    "enumValue": "Temperature",
+                    "displayName": "Temperature"
+                },
+                {
+                    "name": "DewpointTemperature",
+                    "enumValue": "DewpointTemperature",
+                    "displayName": "DewpointTemperature"
+                },
+                {
+                    "name": "Frost",
+                    "enumValue": "Frost",
+                    "displayName": "Frost"
+                },
+                {
+                    "name": "Precipitation",
+                    "enumValue": "Precipitation",
+                    "displayName": "Precipitation"
+                },
+                {
+                    "name": "WindDirection",
+                    "enumValue": "WindDirection",
+                    "displayName": "WindDirection"
+                },
+                {
+                    "name": "WindSpeed",
+                    "enumValue": "WindSpeed",
+                    "displayName": "WindSpeed"
+                },
+                {
+                    "name": "SolarIrradiance",
+                    "enumValue": "SolarIrradiance",
+                    "displayName": "SolarIrradiance"
+                },
+                {
+                    "name": "SolarAngle",
+                    "enumValue": "SolarAngle",
+                    "displayName": "SolarAngle"
+                },
+                {
+                    "name": "Energy",
+                    "enumValue": "Energy",
+                    "displayName": "Energy"
+                },
+                {
+                    "name": "ThermalEnergy",
+                    "enumValue": "ThermalEnergy",
+                    "displayName": "ThermalEnergy"
+                },
+                {
+                    "name": "Flow",
+                    "enumValue": "Flow",
+                    "displayName": "Flow"
+                },
+                {
+                    "name": "CO2",
+                    "enumValue": "CO2",
+                    "displayName": "CO2"
+                },
+                {
+                    "name": "VOC",
+                    "enumValue": "VOC",
+                    "displayName": "VOC"
+                },
+                {
+                    "name": "Occupancy",
+                    "enumValue": "Occupancy",
+                    "displayName": "Occupancy"
+                },    
+                {
+                    "name": "Power",
+                    "enumValue": "Power",
+                    "displayName": "Power"
+                },   
+                {
+                    "name": "ThermalPower",
+                    "enumValue": "ThermalPower",
+                    "displayName": "ThermalPower"
+                },                   
+                {
+                    "name": "Chemical",
+                    "enumValue": "Chemical",
+                    "displayName": "Chemical"
+                },
+                {
+                    "name": "Optical",
+                    "enumValue": "Optical",
+                    "displayName": "Optical"
+                },
+                {
+                    "name": "Pollution",
+                    "enumValue": "Pollution",
+                    "displayName": "Pollution"
+                },
+                {
+                    "name": "Resistance",
+                    "enumValue": "Resistance",
+                    "displayName": "Resistance"
+                },
+                {
+                    "name": "Smoke",
+                    "enumValue": "Smoke",
+                    "displayName": "Smoke"
+                },
+                {
+                    "name": "Status",
+                    "enumValue": "Status",
+                    "displayName": "Status"
+                },
+                {
+                    "name": "Time",
+                    "enumValue": "Time",
+                    "displayName": "Time"
+                },
+                {
+                    "name": "Voltage",
+                    "enumValue": "Voltage",
+                    "displayName": "Voltage"
+                },
+                {
+                    "name": "OperatingTime",
+                    "enumValue": "OperatingTime",
+                    "displayName": "OperatingTime"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "type",
+            "displayName": "Type",
+            "description": "Type of the data point",
+            "schema": "dtmi:com:bosch:bt:foundation:point:PointType:Types;2"
+        },
+        {
+            "@type": "Property",
+            "name": "function",
+            "displayName": "Function",
+            "description": "Classifies the point e.g. as sensor.",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:foundation:point:DataPoint:FunctionTypes;2"
+        },
+        {
+            "@type": "Property",
+            "name": "measurementType",
+            "displayName": "Measurement Type",
+            "description": "Type of the measurement e.g. absolute or delta",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:foundation:point:DataPoint:MeasurementTypes;2"
+        },
+        {
+            "@type": "Property",
+            "name": "section",
+            "displayName": "section",
+            "description": "Section of the observed twin",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:foundation:point:DataPoint:SectionType;2"
+        },
+        {
+            "@type": "Property",
+            "name": "effectiveBounds",
+            "displayName": "Effective bounds",
+            "description": "Bounds in which the data point value is valid",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:foundation:point:DataPoint:EffectiveBoundTypes;2"
+        },
+        {
+            "@type": "Property",
+            "name": "medium",
+            "displayName": "Medium",
+            "description": "What the point senses or controls",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:foundation:point:DataPoint:MediumTypes;2"
+        },
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "ConnectedTo",
+            "description": "The asset to which the point is connected to.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:asset:Asset;2",
+            "maxMultiplicity": 1,
+            "minMultiplicity": 0,
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Relationship",
+            "name": "observes",
+            "displayName": "Observes",
+            "description": "Indicates the (optional) entity-of-interest of the point. For Example: Space, Equipment, Asset, etc..",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:core:DigitalTwin;2",
+            "maxMultiplicity": 1,
+            "minMultiplicity": 0,
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

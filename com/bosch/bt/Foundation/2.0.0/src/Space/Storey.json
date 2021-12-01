@@ -1,0 +1,33 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:space:Storey;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Storey",
+    "description": "A level part of a building alias floor or level.",
+    "extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "level",
+            "displayName": "level",
+            "description": "Storey level as number or label.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Relationship",
+            "name": "isPartOf",
+            "displayName": "Is part of",
+            "description": "Storey is part of this building.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:space:Building;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:asset:Asset;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Abstract Asset",
+    "description": "Provides a definition of a abstract asset (bot:Element).",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+        "dtmi:com:bosch:bt:foundation:core:DigitalTwin;2"
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "modelNumber",
+            "displayName": "Model number",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "serialNumber",
+            "displayName": "Serial number",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "installationDate",
+            "displayName": "Installation date",
+            "description": "Date of the asset installation",
+            "writable": true,
+            "schema": "date"
+        },
+        {
+            "@type": "Property",
+            "name": "commissionDate",
+            "displayName": "Commission date",
+            "description": "Commission date of the asset.",
+            "writable": true,
+            "schema": "date"
+        },
+        {
+            "@type": "Property",
+            "name": "maintenanceInterval",
+            "displayName": "Maintenance interval",
+            "description": "Maintenance interval of the asset as duration.",
+            "writable": true,
+            "schema": "duration"
+        },
+        {
+            "@type": "Relationship",
+            "name": "locatedIn",
+            "displayName": "Is Located In",
+            "description": "The asset is located in this space.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Relationship",
+            "name": "includedIn",
+            "displayName": "Included in",
+            "description": "Included in a collection e.g. system collection.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:core:Collection;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Relationship",
+            "name": "isPartOf",
+            "displayName": "Is part of",
+            "description": "Is part of another asset.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:asset:Asset;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:LSNElement;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "LSN Element",
+	"description": "The LSN element is connected to the fire panel through an LSN Module.",
+	"extends": [
+        "dtmi:com:bosch:bt:fire:Element;2"
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:fire:LSNElement:ElementTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "AutomaticFireDetector",
+                    "displayName": "AutomaticFireDetector",
+                    "enumValue": "AutomaticFireDetector"
+                },
+                {
+                    "name": "SpecialAutomaticFireDetector",
+                    "displayName": "SpecialAutomaticFireDetector",
+                    "enumValue": "SpecialAutomaticFireDetector"
+                },
+                {
+                    "name": "ManualCallPoint",
+                    "displayName": "ManualCallPoint",
+                    "enumValue": "ManualCallPoint"
+                },
+                {
+                    "name": "SignallingDevice",
+                    "displayName": "SignallingDevice",
+                    "enumValue": "SignallingDevice"
+                },
+                {
+                    "name": "FireServiceAppliance",
+                    "displayName": "FireServiceAppliance",
+                    "enumValue": "FireServiceAppliance"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "elementType",
+            "displayName": "Element Type",
+            "description": "The type of the LSN element.",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:fire:LSNElement:ElementTypes;2"
+        },
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The LSN element is connected to an LSN bus.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:LSNBus;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Relationship",
+            "name": "workingHours",
+            "displayName": "Operating Hours",
+            "description": "Counter which holds the total amount of operating hours of the LSNElement.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

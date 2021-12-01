@@ -1,0 +1,10 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:SignallingDeviceZoneModule;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Signalling Device Zone Module",
+    "description": "Module for monitoring and controlling signaling devices.",
+	"extends": [
+        "dtmi:com:bosch:bt:fire:Module;2"
+    ]
+}

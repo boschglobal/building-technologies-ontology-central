@@ -1,0 +1,54 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:FireServiceAppliance;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "FireServiceAppliance",
+    "description": "Fire service appliance is used by the fire service personel (fire brigate) on site.",
+    "extends": [
+        "dtmi:com:bosch:bt:fire:Element;2"
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:fire:FireServiceAppliance:ApplianceTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "KeyDeposit",
+                    "displayName": "KeyDeposit",
+                    "enumValue": "KeyDeposit"
+                },
+                {
+                    "name": "KeyDepositRainProof",
+                    "displayName": "KeyDepositRainProof",
+                    "enumValue": "KeyDepositRainProof"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "applianceType",
+            "displayName": "Appliance Type",
+            "description": "The type of the appliance.",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:fire:FireServiceAppliance:ApplianceTypes;2"
+        },
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The fire service appliance is connected to a communication module.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:CommunicationModule;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:HotWaterPlant;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Hot Water Plant",
+	"description": "Hot Water Plant is used to generate hot water.",
+	"extends": "dtmi:com:bosch:bt:HVAC:ThermalSource;2"
+}

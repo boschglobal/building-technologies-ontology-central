@@ -1,0 +1,45 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:Network;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Network",
+    "description": "Network is an abstract concept which is used to to connect different fire elements to a fire panel through a module.",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:core:DigitalTwin;2",
+		"dtmi:com:bosch:bt:foundation:core:AbstractTwin;2"
+	],
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "physicalAddress",
+			"displayName": "Physical Address",
+			"description": "A set of 4 elements (${module-id}.${loop}.${device}.${port}) to identify and address the device within the system",
+            "writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "logicalAddress",
+			"displayName": "Logical Address",
+			"description": "A set of 4 elements (${network-id}.${panel-id}.${element-type}.${element-no}.${port}) to identify and address the device within the system",
+            "writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "serial",
+			"displayName": "Serial Number",
+			"description": "Serial number of the network.",
+            "writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "timestamp",
+			"displayName": "Timestamp",
+			"description": "Timestamp of the last update of the properties.",
+            "writable": true,
+			"schema": "dateTime"
+		}
+    ]
+}

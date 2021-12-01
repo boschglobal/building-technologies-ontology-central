@@ -1,0 +1,79 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:InterfaceModule;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Interface Module",
+	"description": "The interface module is connected to the LSN network for connecting elements such as conventional devices etc..",
+	"extends": [
+        "dtmi:com:bosch:bt:foundation:asset:Device;2"
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:fire:InterfaceModule:ModuleTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "ConventionalDevice",
+                    "displayName": "ConventionalDevice",
+                    "enumValue": "ConventionalDevice"
+                },
+                {
+                    "name": "SignallingDevice",
+                    "displayName": "SignallingDevice",
+                    "enumValue": "SignallingDevice"
+                },
+                {
+                    "name": "WirelessDevice",
+                    "displayName": "WirelessDevice",
+                    "enumValue": "WirelessDevice"
+                },
+                {
+                    "name": "ExtinguishingPanel",
+                    "displayName": "ExtinguishingPanel",
+                    "enumValue": "ExtinguishingPanel"
+                },
+                {
+                    "name": "InputOutputDevice",
+                    "displayName": "InputOutputDevice",
+                    "enumValue": "InputOutputDevice"
+                },
+                {
+                    "name": "Isolator",
+                    "displayName": "Isolator",
+                    "enumValue": "Isolator"
+                },
+                {
+                    "name": "EndOfLine",
+                    "displayName": "EndOfLine",
+                    "enumValue": "EndOfLine"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "moduleType",
+            "displayName": "Module Type",
+            "description": "The type of the module.",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:fire:InterfaceModule:ModuleTypes;2"
+        },
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The interface module is connected to an LSN bus.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:LSNBus;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

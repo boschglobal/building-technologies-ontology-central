@@ -1,0 +1,17 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:point:BinaryDataPoint;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Binary Data Point",
+    "description": "Data point of setpoint or sensor with a binary value",
+    "extends": "dtmi:com:bosch:bt:foundation:point:StateDataPoint;2",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "currentValue",
+            "displayName": "Current value",
+            "description": "Current value of the data point.",
+            "schema": "dtmi:com:bosch:bt:foundation:point:BinaryValue;2"
+        }
+    ]
+}

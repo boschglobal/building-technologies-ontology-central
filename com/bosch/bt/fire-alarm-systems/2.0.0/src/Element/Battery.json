@@ -1,0 +1,27 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:Battery;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Battery",
+    "description": "Battery device for a fire panel",
+    "extends": [
+        "dtmi:com:bosch:bt:fire:Element;2"
+    ],
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The battery is connected to a battery controller module.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:BatteryControllerModule;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

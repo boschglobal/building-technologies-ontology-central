@@ -1,0 +1,59 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:SignallingDevice;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "SignallingDevice",
+    "description": "Signalling device provides audible and visible notification for different kinds of environmental requirements.",
+    "extends": [
+        "dtmi:com:bosch:bt:fire:Element;2"
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:fire:SignallingDevice:NotificationTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "Visual",
+                    "displayName": "Visual",
+                    "enumValue": "Visual"
+                },
+                {
+                    "name": "Acoustic",
+                    "displayName": "Acoustic",
+                    "enumValue": "Acoustic"
+                },
+                {
+                    "name": "VisualAndAcoustic",
+                    "displayName": "VisualAndAcoustic",
+                    "enumValue": "VisualAndAcoustic"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "notificationType",
+            "displayName": "Notificaiton Type",
+            "description": "The notification type provided.",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:fire:SignallingDevice:NotificationTypes;2"
+        },
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The signalling device is connected to a Signalling Device Zone Module.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:SignallingDeviceZoneModule;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

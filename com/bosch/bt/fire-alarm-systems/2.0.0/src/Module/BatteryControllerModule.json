@@ -1,0 +1,10 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:BatteryControllerModule;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Battery Controller Module",
+	"description": "Module that monitors the power supply of the fire panel and the charging of batteries.",
+	"extends": [
+		"dtmi:com:bosch:bt:fire:Module;2"
+	]
+}

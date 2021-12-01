@@ -1,0 +1,10 @@
+{
+    "@id": "dtmi:com:bosch:bt:samples:BME280;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "BME280 Sensor",
+    "description": "Bosch BME280 Sensor",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:asset:Device;2"
+    ]
+}

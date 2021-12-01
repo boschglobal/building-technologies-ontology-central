@@ -1,0 +1,25 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:space:Space;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Space",
+    "description": "Physical space in a storey, for example.",
+    "extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "isPartOf",
+            "displayName": "Is part of",
+            "description": "Space is located in this Storey.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:space:Storey;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

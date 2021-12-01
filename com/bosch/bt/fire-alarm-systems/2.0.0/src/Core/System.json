@@ -1,0 +1,10 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:System;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Fire System",
+    "description": "A fire system is the aggregation of a set of devices (panel, modules, detectors, ...) which are used to monitor the building conditions and detect unexpected changes (e.g. smoke, fire, pollution).",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:core:Collection;2"
+    ]
+}

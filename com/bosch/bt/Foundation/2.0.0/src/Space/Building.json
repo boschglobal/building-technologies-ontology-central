@@ -1,0 +1,67 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:space:Building;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Building",
+    "description": "An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity.",
+    "extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "timeZone",
+            "displayName": "Time Zone",
+            "description": "The time zone of the region (if applicable). Default value can be defined in the building site.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "countryCode",
+            "displayName": "Country Code",
+            "description": "The country code (ISO 3166-1) the building is located in (if applicable). Default value can be defined in the site of the building.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "stateCode",
+            "displayName": "State Code",
+            "description": "The state code (if applicable).",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "city",
+            "displayName": "city",
+            "description": "A city of the customer's building (if applicable)",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "address",
+            "displayName": "Address",
+            "description": "The address of the site (if applicable).",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Relationship",
+            "name": "isPartOf",
+            "displayName": "Is part of",
+            "description": "The building is part of this site.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:space:Site;2",
+            "minMultiplicity": 0,
+            "maxMultiplicity": 1,
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

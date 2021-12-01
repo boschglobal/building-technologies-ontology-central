@@ -1,0 +1,24 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:point:MultiStateValue;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Multi State Value",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "value",
+            "displayName": "Value",
+            "description": "Multi state value of the data point.",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "timestamp",
+            "displayName": "Timestamp",
+            "description": "Recorded at time of the data point value",
+            "writable": true,
+            "schema": "dateTime"
+        }
+    ]
+}

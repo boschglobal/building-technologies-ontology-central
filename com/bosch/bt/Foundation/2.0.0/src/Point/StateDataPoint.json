@@ -1,0 +1,11 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:point:StateDataPoint;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "State Data Point",
+    "description": "Data point of a state binary or multi state",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:point:DataPoint;2",
+        "dtmi:com:bosch:bt:foundation:core:AbstractTwin;2"
+    ]
+}

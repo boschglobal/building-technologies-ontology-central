@@ -1,0 +1,54 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:CommunicationModule;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "External Notification Module",
+	"description": "The module is used for communicating with other systems.",
+	"extends": [
+		"dtmi:com:bosch:bt:fire:Module;2"
+	],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:fire:CommunicationModule:ModuleTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "CurrentLoopAndRS232Ports",
+                    "displayName": "20mACurrentLoopAndRS232Ports",
+                    "enumValue": "CurrentLoopAndRS232Ports"
+                },
+                {
+                    "name": "TwoRS232Ports",
+                    "displayName": "TwoRS232Ports",
+                    "enumValue": "TwoRS232Ports"
+                },
+                {
+                    "name": "Two20mACurrentLoopPorts",
+                    "displayName": "Two20mACurrentLoopPorts",
+                    "enumValue": "Two20mACurrentLoopPorts"
+                },
+                {
+                    "name": "Annunciator",
+                    "displayName": "Annunciator",
+                    "enumValue": "Annunciator"
+                },
+                {
+                    "name": "ExternalNotification",
+                    "displayName": "ExternalNotification",
+                    "enumValue": "ExternalNotification"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "moduleType",
+            "displayName": "Module Type",
+            "description": "The type of the module.",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:fire:CommunicationModule:ModuleTypes;2"
+        }
+    ]
+}

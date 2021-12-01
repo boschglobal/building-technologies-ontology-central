@@ -1,0 +1,8 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:HeatPumpUnit;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Heat Pump Unit",
+	"description": "Heat Pump Unit is a type of AHU which heats the air.",
+	"extends": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit;2"	
+}

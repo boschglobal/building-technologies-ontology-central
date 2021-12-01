@@ -1,0 +1,105 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:Chiller;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Chiller",
+	"description": "Chiller used to remove heat from a liquid via a vapor compression or an absorption refrigeration cycle.",
+	"extends": "dtmi:com:bosch:bt:HVAC:ThermalSource;2",
+	"schemas": [
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:Chiller:CoolingAgent;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "WaterCooled",
+					"displayName": "Water Cooled",
+					"enumValue": "WaterCooled"
+				},
+				{
+					"name": "AirCooled",
+					"displayName": "Air Cooled",
+					"enumValue": "AirCooled"
+				},
+                {
+                    "name": "Other",
+                    "displayName": "Other",
+                    "enumValue": "Other"
+                }
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:Chiller:CoolingMethod;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "None",
+					"displayName": "None",
+					"enumValue": "None"
+				},
+				{
+					"name": "Absorption",
+					"displayName": "Absorption",
+					"enumValue": "Absorption"
+				},
+				{
+					"name": "Reciprocal",
+					"displayName": "Reciprocal",
+					"enumValue": "Reciprocal"
+				},
+				{
+					"name": "Screw",
+					"displayName": "Screw",
+					"enumValue": "Screw"
+				},
+				{
+					"name": "Centrifugal",
+					"displayName": "Centrifugal",
+					"enumValue": "Centrifugal"
+				}
+			]
+		}
+	],
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "CoolingAgent",
+			"displayName": "Cooling Agent",
+			"description": "The cooling agent used by the chiller.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:Chiller:CoolingAgent;2"
+		},
+		{
+			"@type": "Property",
+			"name": "CoolingMethod",
+			"displayName": "Cooling Method",
+			"description": "The cooling method used by the chiller.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:Chiller:CoolingMethod;2"
+		},
+		{
+			"@type": "Property",
+			"name": "CoolingCapacity",
+			"displayName": "Cooling Capacity",
+			"description": "The measurement of a chiller's ability to remove heat.",
+            "writable": true,
+            "schema": "double"
+		},
+		{
+			"@type": "Relationship",
+			"name": "ChilledWaterPlant",
+			"displayName": "Chilled Water Plant Reference",
+			"description": "A reference to a chilled water plant.",
+            "writable": true,
+			"target": "dtmi:com:bosch:bt:HVAC:ChilledWaterPlant;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+		}
+	]
+}

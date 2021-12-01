@@ -1,0 +1,68 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:Module;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Module",
+    "description": "A fire module based on the type is used to connected the different devices to the panel.",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:asset:Device;2",
+		"dtmi:com:bosch:bt:foundation:core:AbstractTwin;2"
+	],
+	"contents": [			
+        {
+			"@type": "Property",
+			"name": "physicalAddress",
+			"displayName": "Physical Address",
+			"description": "A set of 4 elements (${module-id}.${loop}.${device}.${port}) to identify and address the device within the system",
+            "writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "logicalAddress",
+			"displayName": "Logical Address",
+			"description": "A set of 4 elements (${network-id}.${panel-id}.${element-type}.${element-no}.${port}) to identify and address the device within the system",
+            "writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "timestamp",
+			"displayName": "Timestamp",
+			"description": "Timestamp of the last update of the properties.",
+            "writable": true,
+			"schema": "dateTime"
+		},
+		{
+			"@type": "Property",
+			"name": "softwareVersion",
+			"displayName": "Software version",
+			"description": "Current software version used in the module.",
+            "writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "productionDate",
+			"displayName": "Production Date",
+			"description": "Date of production of the module",
+            "writable": true,
+			"schema": "dateTime"
+		},
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The module is connected to a panel.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:Panel;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+	"@id": "dtmi:com:bosch:bt:foundation:core:Collection;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Abstract Collection",
+	"description": "Collection is a grouping of digital twins that are addressed and treated as a unit for some purpose for example a system.",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+		"dtmi:com:bosch:bt:foundation:core:DigitalTwin;2"
+	]
+}

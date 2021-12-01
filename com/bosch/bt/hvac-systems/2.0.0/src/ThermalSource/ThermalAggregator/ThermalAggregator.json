@@ -1,0 +1,25 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:ThermalAggregator;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Thermal Aggregator",
+	"description": "Thermal aggregator aggregates heating and/or cooling from two or more thermal sources.",
+	"extends": "dtmi:com:bosch:bt:HVAC:ThermalSource;2",
+	"contents": [
+		{
+			"@type": "Relationship",
+			"name": "ThermalSource",
+			"displayName": "Thermal Source Reference",
+			"description": "This is a reference to two or more source of the thermal energy. For Example: Hot water plant, Cold water plant, Steam plan, Chiller etc..",
+            "writable": true,
+			"target": "dtmi:com:bosch:bt:HVAC:ThermalSource;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+		}
+	]
+}

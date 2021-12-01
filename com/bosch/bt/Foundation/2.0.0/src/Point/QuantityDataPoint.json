@@ -1,0 +1,53 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Quantity Data Point",
+    "description": "Data point with quantity and unit",
+    "extends": "dtmi:com:bosch:bt:foundation:point:DataPoint;2",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "currentValue",
+            "displayName": "Current value",
+            "description": "Current (last) value of the data point.",
+            "schema": "dtmi:com:bosch:bt:foundation:point:QuantityValue;2"
+        },
+        {
+            "@type": "Component",
+            "name": "minValue",
+            "displayName": "Min value",
+            "description": "Minimal value of the data point.",
+            "schema": "dtmi:com:bosch:bt:foundation:point:QuantityValue;2"
+        },
+        {
+            "@type": "Component",
+            "name": "maxValue",
+            "displayName": "Max value",
+            "description": "Maximal value of the data point.",
+            "schema": "dtmi:com:bosch:bt:foundation:point:QuantityValue;2"
+        },
+        {
+            "@type": "Property",
+            "name": "thresholds",
+            "displayName": "Thresholds",
+            "description": "Thresholds for the quantity data point",
+            "schema": {
+                "@type": "Map",
+                "mapKey": {
+                    "name": "name",
+                    "displayName": "Name",
+                    "description": "Qualifier name of the threshold",
+                    "schema": "string"
+                },
+                "mapValue": {
+                    "name": "value",
+                    "displayName": "Value",
+                    "description": "Threshold value",
+                    "schema": "double"
+                }
+            },
+            "writable": true
+        }
+    ]
+}

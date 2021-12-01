@@ -1,0 +1,10 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:LSNModule;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "LSN Module",
+	"description": "The Module for the connection of an LSN loop with up to 254 LSN improved LSN elements, or 127 standard LSN elements",
+	"extends": [
+		"dtmi:com:bosch:bt:fire:Module;2"
+	]
+}

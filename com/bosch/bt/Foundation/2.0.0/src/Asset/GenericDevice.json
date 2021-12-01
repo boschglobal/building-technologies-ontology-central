@@ -1,0 +1,8 @@
+{
+	"@id": "dtmi:com:bosch:bt:foundation:asset:GenericDevice;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Generic Device",
+	"description": "Generic network device, can be used for devices which are not described by a domain specific ontology model.",
+	"extends": "dtmi:com:bosch:bt:foundation:asset:Device;2"
+}

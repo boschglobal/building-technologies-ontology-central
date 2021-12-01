@@ -1,0 +1,27 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:ConventionalElement;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Conventional Element",
+	"description": "The Conventional element is connected to the fire panel through a Conventional Module.",
+	"extends": [
+        "dtmi:com:bosch:bt:fire:Element;2"
+    ],
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The Conventional element is connected to a conventional line.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:ConventionalLine;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

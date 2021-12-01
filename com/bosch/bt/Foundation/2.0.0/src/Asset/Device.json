@@ -1,0 +1,34 @@
+{
+	"@id": "dtmi:com:bosch:bt:foundation:asset:Device;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Abstract Device",
+	"description": "Provides a definition of a basic device which has a network interface.",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+		"dtmi:com:bosch:bt:foundation:asset:Asset;2"
+	],
+    "contents": [
+		{
+			"@type": "Property",
+			"name": "ipAddress",
+			"displayName": "IP address",
+			"writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "macAddress",
+			"displayName": "MAC address",
+			"writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "network",
+			"displayName": "Network",
+			"writable": true,
+			"schema": "string"
+		}
+	]
+}

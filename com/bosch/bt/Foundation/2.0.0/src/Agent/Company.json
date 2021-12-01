@@ -1,0 +1,8 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:agent:Company;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Company",
+    "description": "A company e.g. Bosch Building Technologies",
+    "extends": "dtmi:com:bosch:bt:foundation:agent:Organization;2" 
+}

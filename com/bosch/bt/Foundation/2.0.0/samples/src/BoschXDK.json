@@ -1,0 +1,10 @@
+{
+    "@id": "dtmi:com:bosch:bt:samples:XDK;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Bosch XDK",
+    "description": "Bosch XDK Cross Domain Development Kit",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:asset:Device;2"
+    ]
+}

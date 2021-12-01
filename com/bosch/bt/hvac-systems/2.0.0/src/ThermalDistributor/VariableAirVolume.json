@@ -1,0 +1,119 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:VariableAirVolume;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Variable Air Volume",
+	"description": "Variable Air Volume supply duct equipment.",
+	"extends": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2",
+	"schemas": [
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:HeatingAndCoolingMethod;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "CoolingOnly",
+					"displayName": "Cooling Only",
+					"enumValue": "CoolingOnly"
+				},
+				{
+					"name": "ElectricReheat",
+					"displayName": "Electric Reheating",
+					"enumValue": "ElectricReheat"
+				},
+				{
+					"name": "HotWaterReheat",
+					"displayName": "Hot Water Reheating",
+					"enumValue": "HotWaterReheat"
+				},
+                {
+                    "name": "Other",
+                    "displayName": "Other",
+                    "enumValue": "Other"
+                }
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:AirCircuit;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "None",
+					"displayName": "None",
+					"enumValue": "None"
+				},
+				{
+					"name": "SeriesFanPowered",
+					"displayName": "Series Fan Powered",
+					"enumValue": "SeriesFanPowered"
+				},
+				{
+					"name": "ParallelFanPowered",
+					"displayName": "Parallel Fan Powered",
+					"enumValue": "ParallelFanPowered"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:DuctWorkConfiguration;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "SingleDuct",
+					"displayName": "Single Duct",
+					"enumValue": "SingleDuct"
+				},
+				{
+					"name": "DualDuct",
+					"displayName": "Dual Duct",
+					"enumValue": "DualDuct"
+				}
+			]
+		},
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:Modulation;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "PressureDependent",
+					"displayName": "Pressure Dependent",
+					"enumValue": "PressureDependent"
+				},
+				{
+					"name": "PressureIndependent",
+					"displayName": "Pressure Independent",
+					"enumValue": "PressureIndependent"
+				}
+			]
+		}
+	],
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "AirCircuit",
+			"displayName": "Air Circuit Configuration",
+			"description": "The method used for pulling air using fan from outside the primary airflow.",
+			"writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:AirCircuit;2"
+		},
+		{
+			"@type": "Property",
+			"name": "DuctWorkConfiguration",
+			"displayName": "Duct Work Configuration",
+			"description": "The duct work configuration used by the VAV.",
+			"writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:DuctWorkConfiguration;2"
+		},
+		{
+			"@type": "Property",
+			"name": "Modulation",
+			"displayName": "Modulation",
+			"description": "Indicates if the VAV is dependent on pressure being maintained for controlling space temperature.",
+			"writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:Modulation;2"
+		}
+	]
+}

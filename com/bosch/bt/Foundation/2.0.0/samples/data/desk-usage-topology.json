@@ -1,0 +1,267 @@
+{
+  "digitalTwinsFileInfo": {
+    "fileVersion": "1.0.0"
+  },
+  "digitalTwinsGraph": {
+    "digitalTwins": [
+      {
+        "$dtId": "room-1",
+        "$etag": "W/\"4d862ad0-543b-417a-8579-00627c10c2ad\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:space:Space;2"
+        }
+      },
+      {
+        "$dtId": "building-1",
+        "$etag": "W/\"73a8900f-f5c5-4abc-9a8e-411825ef4081\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:space:Building;2"
+        }
+      },
+      {
+        "$dtId": "site-1",
+        "$etag": "W/\"4dfb2117-02a7-4f70-ab60-8ef04dbce836\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:space:Site;2"
+        }
+      },
+      {
+        "$dtId": "floor-1",
+        "$etag": "W/\"d540885f-7a18-4bb6-b947-58ba42a069a5\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:space:Storey;2"
+        }
+      },
+      {
+        "$dtId": "desk-1",
+        "$etag": "W/\"0764e32c-fd3d-4bca-866a-e54e1a542ca2\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:samples:Desk;2"
+        }
+      },
+      {
+        "$dtId": "room-2",
+        "$etag": "W/\"5e905590-7abf-4eba-879a-a67234bb4730\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:space:Space;2"
+        }
+      },
+      {
+        "$dtId": "desk-2",
+        "$etag": "W/\"1c44fe15-7fda-4e95-8ba6-23d22446d8c9\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:samples:Desk;2"
+        }
+      },
+      {
+        "$dtId": "desk-3",
+        "$etag": "W/\"54424547-1200-4405-89db-c4f4e47f004c\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:samples:Desk;2"
+        }
+      },
+      {
+        "$dtId": "occupancy-3",
+        "$etag": "W/\"7f59102f-a711-44e2-9ff5-b38e9d0962d9\"",
+        "type": "Occupancy",
+        "function": "Virtual",
+        "currentValue": {
+          "value": "Occupied",
+          "$metadata": {
+            "value": {
+              "lastUpdateTime": "2021-11-18T07:45:46.6873733Z"
+            }
+          }
+        },
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:point:MultiStateDataPoint;2"
+        }
+      },
+      {
+        "$dtId": "desk-4",
+        "$etag": "W/\"65db2d41-ee2f-4140-a92f-f55cf0136b6c\"",
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:samples:Desk;2"
+        }
+      },
+      {
+        "$dtId": "occupancy-1",
+        "$etag": "W/\"23d1c023-d3ae-412a-8f0e-3e2357fbf257\"",
+        "type": "Occupancy",
+        "function": "Virtual",
+        "currentValue": {
+          "value": "Free",
+          "$metadata": {
+            "value": {
+              "lastUpdateTime": "2021-11-18T07:47:21.2624383Z"
+            }
+          }
+        },
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:point:MultiStateDataPoint;2"
+        }
+      },
+      {
+        "$dtId": "occupancy-2",
+        "$etag": "W/\"bbc917a4-fd2a-4d5f-b25b-030ccb29ca7d\"",
+        "type": "Occupancy",
+        "function": "Virtual",
+        "currentValue": {
+          "value": "Free",
+          "$metadata": {
+            "value": {
+              "lastUpdateTime": "2021-11-18T07:46:54.8579547Z"
+            }
+          }
+        },
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:point:MultiStateDataPoint;2"
+        }
+      },
+      {
+        "$dtId": "occupancy-4",
+        "$etag": "W/\"847e8a8c-1ce8-4381-9c05-e4c7b40e8651\"",
+        "type": "Occupancy",
+        "function": "Virtual",
+        "currentValue": {
+          "value": "Free",
+          "$metadata": {
+            "value": {
+              "lastUpdateTime": "2021-11-18T07:46:25.9151524Z"
+            }
+          }
+        },
+        "location": {
+          "$metadata": {}
+        },
+        "$metadata": {
+          "$model": "dtmi:com:bosch:bt:foundation:point:MultiStateDataPoint;2"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "$relationshipId": "972a700f-a9a0-473e-9004-b62f6dcd430b",
+        "$sourceId": "room-1",
+        "$targetId": "floor-1",
+        "$relationshipName": "isPartOf",
+        "$etag": "W/\"0e872ddf-ecca-4002-ba6d-0feab403f9b8\""
+      },
+      {
+        "$relationshipId": "dc9b3b2a-d5ae-453a-92a3-ad4aa1abe655",
+        "$sourceId": "building-1",
+        "$targetId": "site-1",
+        "$relationshipName": "isPartOf",
+        "$etag": "W/\"716b75a3-c37c-479f-9a36-c6e80cf67e98\""
+      },
+      {
+        "$relationshipId": "aa59fd19-3f31-489d-bad9-808776ec871c",
+        "$sourceId": "floor-1",
+        "$targetId": "building-1",
+        "$relationshipName": "isPartOf",
+        "$etag": "W/\"642c7bfd-acff-4958-9ad6-1c0b7056d707\""
+      },
+      {
+        "$relationshipId": "87687394-0894-4ac7-81e6-95022dca73df",
+        "$sourceId": "desk-1",
+        "$targetId": "room-1",
+        "$relationshipName": "locatedIn",
+        "$etag": "W/\"f7d9e985-cd3a-4389-9691-2fbf52e39949\""
+      },
+      {
+        "$relationshipId": "ed369cf3-2099-4941-8b70-fdd47eac95b1",
+        "$sourceId": "room-2",
+        "$targetId": "floor-1",
+        "$relationshipName": "isPartOf",
+        "$etag": "W/\"ffe1c01d-2a46-4826-aa77-b72136db7043\""
+      },
+      {
+        "$relationshipId": "233822d6-1aa0-4269-8718-476a16d689e1",
+        "$sourceId": "desk-2",
+        "$targetId": "room-1",
+        "$relationshipName": "locatedIn",
+        "$etag": "W/\"194789ce-4fee-409c-907f-cc3f1dcef050\""
+      },
+      {
+        "$relationshipId": "52bc1b82-5cb0-4d8f-9b3e-8114a92738b6",
+        "$sourceId": "occupancy-3",
+        "$targetId": "desk-3",
+        "$relationshipName": "observes",
+        "$etag": "W/\"dc21b688-dbc9-40dc-ac0a-d457ecf18fd2\""
+      },
+      {
+        "$relationshipId": "890e77f1-c28d-4fcd-9671-79c6ef47b971",
+        "$sourceId": "occupancy-1",
+        "$targetId": "desk-1",
+        "$relationshipName": "observes",
+        "$etag": "W/\"4a97873e-d63b-4f08-99a2-6d753e8a42f7\""
+      },
+      {
+        "$relationshipId": "1723c850-9c21-4c79-b491-0b3498c2385c",
+        "$sourceId": "desk-3",
+        "$targetId": "room-1",
+        "$relationshipName": "locatedIn",
+        "$etag": "W/\"79607094-f20f-46cf-8678-8d600237e8ce\""
+      },
+      {
+        "$relationshipId": "c57a9e38-71a6-4ccb-9ca9-cac8facfc308",
+        "$sourceId": "desk-4",
+        "$targetId": "room-2",
+        "$relationshipName": "locatedIn",
+        "$etag": "W/\"e0812c2f-43df-4773-879a-13f72cd1522a\""
+      },
+      {
+        "$relationshipId": "2d8dea1c-9098-4eda-937a-aff21adcb6f3",
+        "$sourceId": "occupancy-2",
+        "$targetId": "desk-2",
+        "$relationshipName": "observes",
+        "$etag": "W/\"6798b7fc-7472-45b2-93f8-1ac02726248a\""
+      },
+      {
+        "$relationshipId": "5395cc69-ba1a-4acc-bb87-63b5b65e437e",
+        "$sourceId": "occupancy-4",
+        "$targetId": "desk-4",
+        "$relationshipName": "observes",
+        "$etag": "W/\"9b1d2253-3279-4ea6-bd7f-2c64ed98619d\""
+      }
+    ]
+  },
+  "digitalTwinsModels": [
+  ]
+}

@@ -1,0 +1,640 @@
+{
+    "digitalTwinsFileInfo": {
+        "fileVersion": "1.0.0"
+    },
+    "digitalTwinsGraph": {
+        "digitalTwins": [
+            {
+                "$dtId": "BoschSite1",
+                "$etag": "W/\"475b1909-6750-4ea7-adba-be215701bb9d\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Site;2"
+                }
+            },
+            {
+                "$dtId": "B1",
+                "$etag": "W/\"0d803bde-31e9-45fa-8fa9-e49f88b54b94\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Building;2"
+                }
+            },
+            {
+                "$dtId": "B1F1",
+                "$etag": "W/\"7ebe4f62-50a7-4148-aed5-627ca5ac7864\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Storey;2"
+                }
+            },
+            {
+                "$dtId": "Office1",
+                "$etag": "W/\"57d19de8-1ad8-490a-ac42-19c384dcfb7e\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Space;2"
+                }
+            },
+            {
+                "$dtId": "Storage",
+                "$etag": "W/\"39cc2c7d-3a62-49b4-9224-597a4557379e\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Space;2"
+                }
+            },
+            {
+                "$dtId": "FireSystem1",
+                "$etag": "W/\"b8abecce-cb3c-4585-8aad-1a0629bd0673\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:System;2"
+                }
+            },
+            {
+                "$dtId": "Panel1",
+                "$etag": "W/\"eb4f5624-fbbb-4ef3-a196-4db5d1a747c8\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:Panel;2"
+                }
+            },
+            {
+                "$dtId": "BM1",
+                "$etag": "W/\"0aa8229f-0d3d-4e5f-8418-059c4c00bb1e\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:BatteryControllerModule;2"
+                }
+            },
+            {
+                "$dtId": "BA1",
+                "$etag": "W/\"3407df9b-1cc8-455d-8792-601cb69bad0c\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:Battery;2"
+                }
+            },
+            {
+                "$dtId": "VoltageBA1",
+                "$etag": "W/\"f11e4662-c61c-448c-ae67-667111114f4d\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "ResistanceBA1",
+                "$etag": "W/\"0533dbf8-0b4e-4069-84ac-9356920cfb1c\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "CurrentBA1",
+                "$etag": "W/\"6251e2c6-de1a-4fee-af75-352accb6babb\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "CM1",
+                "$etag": "W/\"cd2c695f-c0f6-4354-9dc4-5d35e256cba3\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:ConventionalZoneModule;2"
+                }
+            },
+            {
+                "$dtId": "CL1",
+                "$etag": "W/\"83843415-f906-4c21-9dbf-5c7176370c13\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:ConventionalLine;2"
+                }
+            },
+            {
+                "$dtId": "VoltageCL1",
+                "$etag": "W/\"a685bb48-d3cf-4793-a96b-ef46168955e0\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "ResistanceCL1",
+                "$etag": "W/\"0c23de0e-5ebc-4299-b4c7-53e6f8760c71\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "CurrentCL1",
+                "$etag": "W/\"5d1a5c1b-f86c-4bb9-8dc6-ba8d3608b243\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "LSNM1",
+                "$etag": "W/\"6abdd18f-c2ef-4355-9972-baebbec155cb\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:LSNModule;2"
+                }
+            },
+            {
+                "$dtId": "NearShortsLSNM1",
+                "$etag": "W/\"cd706119-249b-49af-bda5-8109dac6a37b\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "LSNInitializationLSNM1",
+                "$etag": "W/\"5f367622-ddbc-4e07-a2a2-7cecc2cb15fd\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "PositiveCurrentLSNM1",
+                "$etag": "W/\"cec605a9-1e33-4884-b7d9-cc17c176dfcf\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "BUS1",
+                "$etag": "W/\"5abd7f0f-1d49-4eb3-a9a4-52c9d9782368\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:LSNBus;2"
+                }
+            },
+            {
+                "$dtId": "StateBUS1",
+                "$etag": "W/\"f5f0d329-974b-4407-89e0-2cf4b6c7d7a0\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "Detector1",
+                "$etag": "W/\"5b9dc4e2-cb7b-42a5-aa06-129c2cdd5fce\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:fire:LSNElement;2"
+                }
+            },
+            {
+                "$dtId": "OpticalD1",
+                "$etag": "W/\"d96f8592-6240-4d8f-a18d-b9d63cbd4769\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "PollutionD1",
+                "$etag": "W/\"86929a0a-7a3d-494a-a8c1-db6dc8798190\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "TemperatureD1",
+                "$etag": "W/\"72fa8edd-b299-4562-a0e2-dab3401ea2f8\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "ChemicalD1",
+                "$etag": "W/\"dd503410-f24a-4810-85fe-9302667710f9\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "WorkingHoursD1",
+                "$etag": "W/\"770ddcdb-42a5-4172-a9f8-61ffe8ad6f38\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "$relationshipId": "e51e44fa-64b7-43dd-8170-2bb0ce3eec2a",
+                "$sourceId": "B1",
+                "$targetId": "BoschSite1",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"8b1bdd49-5311-43da-b2f1-566e95e8f4fd\""
+            },
+            {
+                "$relationshipId": "5896c261-293b-4187-bc73-ad409adaf21f",
+                "$sourceId": "Office1",
+                "$targetId": "B1F1",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"79bb1074-fea2-495f-87fd-378fc4166ac1\""
+            },
+            {
+                "$relationshipId": "62e78943-e26e-4553-bbab-889e0f02f2e8",
+                "$sourceId": "Storage",
+                "$targetId": "B1F1",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"c6ac911a-9125-4ebe-8b43-e7b466be65c0\""
+            },
+            {
+                "$relationshipId": "df6bf8a0-fee1-47bf-9b91-6a71317a9320",
+                "$sourceId": "B1F1",
+                "$targetId": "B1",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"0e4c7984-9a90-4de3-85bf-2efb84074d9a\""
+            },
+            {
+                "$relationshipId": "df8cbb55-bcac-4dfe-82b3-11923bb16fc7",
+                "$sourceId": "Panel1",
+                "$targetId": "FireSystem1",
+                "$relationshipName": "isPartOfSystem",
+                "$etag": "W/\"7f62440d-9a5d-4ca4-a158-00fc95840629\""
+            },
+            {
+                "$relationshipId": "337c4a28-6476-4413-9d68-e9aeb53916fb",
+                "$sourceId": "Panel1",
+                "$targetId": "Storage",
+                "$relationshipName": "locatedIn",
+                "$etag": "W/\"f3e313a4-7339-47b6-80ad-529b2d7dfb60\""
+            },
+            {
+                "$relationshipId": "54419b56-1f2f-4dde-a406-55f42b0601ed",
+                "$sourceId": "BM1",
+                "$targetId": "Panel1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"4f76faf1-2d43-4ae5-9558-6ed5282733a1\""
+            },
+            {
+                "$relationshipId": "e005fa07-5493-41f7-a798-b66e19fa4524",
+                "$sourceId": "BA1",
+                "$targetId": "BM1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"996f483b-0d6d-4353-8657-bf391d5f916b\""
+            },
+            {
+                "$relationshipId": "b02dd9ee-7364-48a7-9c1f-be2d512339e0",
+                "$sourceId": "VoltageBA1",
+                "$targetId": "BA1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"4a047224-3fec-4e03-a123-f66cf9e9f819\""
+            },
+            {
+                "$relationshipId": "c4be3649-2cc5-41c0-bf58-017ad6e26be1",
+                "$sourceId": "CurrentBA1",
+                "$targetId": "BA1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"9ce59b2b-2eb3-40b8-86f8-fd0f29e0675a\""
+            },
+            {
+                "$relationshipId": "572cf82d-7067-4b50-b602-d4010aeea140",
+                "$sourceId": "CM1",
+                "$targetId": "Panel1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"e9783b93-2ba4-4e3a-a44f-142d966b1857\""
+            },
+            {
+                "$relationshipId": "9546d79b-466d-45dd-bc6f-a728e041e625",
+                "$sourceId": "ResistanceBA1",
+                "$targetId": "BA1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"3ed364d8-9c33-4f7c-84d2-4798bd710333\""
+            },
+            {
+                "$relationshipId": "7c14968d-c8df-43a4-bd95-670a51173b8a",
+                "$sourceId": "CL1",
+                "$targetId": "CM1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"f1624e9f-f399-40ee-8595-eb9a8ff92c69\""
+            },
+            {
+                "$relationshipId": "97d22493-0391-46ce-9cd0-15e2eaea50d4",
+                "$sourceId": "CurrentCL1",
+                "$targetId": "CL1",
+                "$relationshipName": "observes",
+                "$etag": "W/\"3cfe71d2-766c-4a45-9d35-65fb8b03e23a\""
+            },
+            {
+                "$relationshipId": "536ac2fa-e261-4afa-82a0-4f13a706c059",
+                "$sourceId": "VoltageCL1",
+                "$targetId": "CL1",
+                "$relationshipName": "observes",
+                "$etag": "W/\"9dc94748-b7b7-4495-8da0-cfc1082374b2\""
+            },
+            {
+                "$relationshipId": "26d16bae-7582-4367-8f58-4e4e9715ebb2",
+                "$sourceId": "LSNM1",
+                "$targetId": "Panel1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"1708dc26-1745-479b-82c1-77cbd96fb9da\""
+            },
+            {
+                "$relationshipId": "e86639b7-22dd-4d61-97b3-8a964830887b",
+                "$sourceId": "ResistanceCL1",
+                "$targetId": "CL1",
+                "$relationshipName": "observes",
+                "$etag": "W/\"bb866874-6f47-4f8e-abd5-016d0022fd23\""
+            },
+            {
+                "$relationshipId": "49c96cb9-909e-4fe6-9315-d6bbccb2a3cc",
+                "$sourceId": "LSNInitializationLSNM1",
+                "$targetId": "LSNM1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"aa86b4b1-88d8-44ca-a547-fdc6aa76f7ca\""
+            },
+            {
+                "$relationshipId": "b989c1d7-b68d-47a2-913b-9d5aab13ba07",
+                "$sourceId": "NearShortsLSNM1",
+                "$targetId": "LSNM1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"423ce52c-fb5c-497c-9858-1abd839da126\""
+            },
+            {
+                "$relationshipId": "557bd208-9cbb-4d36-ab18-d91205df6268",
+                "$sourceId": "BUS1",
+                "$targetId": "LSNM1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"30262be8-085d-42a5-b5ff-20ecba4fba3a\""
+            },
+            {
+                "$relationshipId": "5c24de45-3b05-4b9c-b3ce-9f4928f9e2a9",
+                "$sourceId": "PositiveCurrentLSNM1",
+                "$targetId": "LSNM1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"a1df472b-aa4b-4a6f-b9b2-723fba0683e7\""
+            },
+            {
+                "$relationshipId": "b55920dc-b269-440d-acb9-23f69ffb4c8e",
+                "$sourceId": "StateBUS1",
+                "$targetId": "BUS1",
+                "$relationshipName": "observes",
+                "$etag": "W/\"6cb01ec8-dadb-40dd-98d1-32909ff6fe18\""
+            },
+            {
+                "$relationshipId": "3660c082-4ebe-444e-9b38-af2f6efd3523",
+                "$sourceId": "Detector1",
+                "$targetId": "BUS1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"ed54a18a-8e93-40f5-816c-39056c1ed990\""
+            },
+            {
+                "$relationshipId": "05016c0c-34f9-438f-80a9-289e1b0c1e95",
+                "$sourceId": "Detector1",
+                "$targetId": "Office1",
+                "$relationshipName": "locatedIn",
+                "$etag": "W/\"e6d3dd22-a87e-4c5e-9802-db754edd78a0\""
+            },
+            {
+                "$relationshipId": "aea301be-b962-4cdc-913e-6595af9d8fc7",
+                "$sourceId": "OpticalD1",
+                "$targetId": "Detector1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"3507aa06-2778-4e23-8fea-248a4d41a96b\""
+            },
+            {
+                "$relationshipId": "27102955-223f-4044-88dd-8118cbe9f354",
+                "$sourceId": "PollutionD1",
+                "$targetId": "Detector1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"0ff820fd-52fd-4790-a6d4-829828a3e6ef\""
+            },
+            {
+                "$relationshipId": "08fd720c-9e2c-44c0-b351-a15cd0591d7b",
+                "$sourceId": "TemperatureD1",
+                "$targetId": "Detector1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"9f45b751-3a8c-4992-8ea1-558a92233c38\""
+            },
+            {
+                "$relationshipId": "9bef5311-26c9-4c75-8721-597d1eafe676",
+                "$sourceId": "WorkingHoursD1",
+                "$targetId": "Detector1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"8501d064-ab35-4f36-8c06-9f2462b622ab\""
+            },
+            {
+                "$relationshipId": "480af44d-4e22-4a50-ac11-d3c5cd8d1b17",
+                "$sourceId": "ChemicalD1",
+                "$targetId": "Detector1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"188ac206-2191-475f-abc2-34b40eb8830c\""
+            }
+        ]
+    },
+    "digitalTwinsModels": []
+}

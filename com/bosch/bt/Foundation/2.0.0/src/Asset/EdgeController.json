@@ -1,0 +1,8 @@
+{
+	"@id": "dtmi:com:bosch:bt:foundation:asset:EdgeController;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Edge Controller",
+	"description": "Provides a definition of a Edge Controller",
+	"extends": "dtmi:com:bosch:bt:foundation:asset:Device;2"
+}

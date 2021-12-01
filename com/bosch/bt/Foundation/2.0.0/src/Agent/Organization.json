@@ -1,0 +1,28 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:agent:Organization;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Abstract Organization",
+    "description": "A organization company or department e.g. Bosch Building Technologies",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+        "dtmi:com:bosch:bt:foundation:agent:Agent;2"
+    ],
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "isPartOf",
+            "displayName": "Is Part Of",
+            "description": "Organization is part of parent organization.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:agent:Organization;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

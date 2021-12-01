@@ -1,0 +1,8 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:agent:Person;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Person",
+    "description": "An individual human being.",
+	"extends": "dtmi:com:bosch:bt:foundation:agent:Agent;2"
+}

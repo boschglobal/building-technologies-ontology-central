@@ -1,0 +1,242 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Abstract Zone",
+    "description": "A part of the physical world or a virtual world that is inherently both located in this world and has a 3D spatial extent.",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+        "dtmi:com:bosch:bt:foundation:core:DigitalTwin;2"
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:foundation:space:SpaceTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "Atrium",
+                    "displayName": "Atrium",
+                    "enumValue": "Atrium"
+                },
+                {
+                    "name": "Hospital",
+                    "displayName": "Hospital",
+                    "enumValue": "Hospital"
+                },
+                {
+                    "name": "School",
+                    "displayName": "School",
+                    "enumValue": "School"
+                },
+                {
+                    "name": "ShoppingMall",
+                    "displayName": "ShoppingMall",
+                    "enumValue": "ShoppingMall"
+                },
+                {
+                    "name": "Stadium",
+                    "displayName": "Stadium",
+                    "enumValue": "Stadium"
+                },
+                {
+                    "name": "VirtualBuilding",
+                    "displayName": "VirtualBuilding",
+                    "enumValue": "VirtualBuilding"
+                },
+                {
+                    "name": "Entrance",
+                    "displayName": "Entrance",
+                    "enumValue": "Entrance"
+                },
+                {
+                    "name": "MainEntrance",
+                    "displayName": "MainEntrance",
+                    "enumValue": "MainEntrance"
+                },
+                {
+                    "name": "ServiceEntrance",
+                    "displayName": "ServiceEntrance",
+                    "enumValue": "ServiceEntrance"
+                },
+                {
+                    "name": "Cafeteria",
+                    "displayName": "Cafeteria",
+                    "enumValue": "Cafeteria"
+                },
+                {
+                    "name": "Cooking",
+                    "displayName": "Cooking",
+                    "enumValue": "Cooking"
+                },
+                {
+                    "name": "Bar",
+                    "displayName": "Bar",
+                    "enumValue": "Bar"
+                },
+                {
+                    "name": "Garage",
+                    "displayName": "Garage",
+                    "enumValue": "Garage"
+                },
+                {
+                    "name": "Laboratory",
+                    "displayName": "Laboratory",
+                    "enumValue": "Laboratory"
+                },
+                {
+                    "name": "Office",
+                    "displayName": "Office",
+                    "enumValue": "Office"
+                },
+                {
+                    "name": "PhoneBooth",
+                    "displayName": "PhoneBooth",
+                    "enumValue": "PhoneBooth"
+                },
+                {
+                    "name": "Flexdesk",
+                    "displayName": "Flexdesk",
+                    "enumValue": "Flexdesk"
+                },
+                {
+                    "name": "DisabledToilet",
+                    "displayName": "DisabledToilet",
+                    "enumValue": "DisabledToilet"
+                },
+                {
+                    "name": "Toilet",
+                    "displayName": "Toilet",
+                    "enumValue": "Toilet"
+                },
+                {
+                    "name": "Retail",
+                    "displayName": "Retail",
+                    "enumValue": "Retail"
+                },
+                {
+                    "name": "DataServer",
+                    "displayName": "DataServer",
+                    "enumValue": "DataServer"
+                },
+                {
+                    "name": "Electricity",
+                    "displayName": "Electricity",
+                    "enumValue": "Electricity"
+                },
+                {
+                    "name": "Sprinkler",
+                    "displayName": "Sprinkler",
+                    "enumValue": "Sprinkler"
+                },
+                {
+                    "name": "Utilities",
+                    "displayName": "Utilities",
+                    "enumValue": "Utilities"
+                },
+                {
+                    "name": "Cleaning",
+                    "displayName": "Cleaning",
+                    "enumValue": "Cleaning"
+                },
+                {
+                    "name": "Conference",
+                    "displayName": "Conference",
+                    "enumValue": "Conference"
+                },
+                {
+                    "name": "Conversation",
+                    "displayName": "Conversation",
+                    "enumValue": "Conversation"
+                },
+                {
+                    "name": "Copying",
+                    "displayName": "Copying",
+                    "enumValue": "Copying"
+                },
+                {
+                    "name": "Elevator",
+                    "displayName": "Elevator",
+                    "enumValue": "Elevator"
+                },
+                {
+                    "name": "Library",
+                    "displayName": "Library",
+                    "enumValue": "Library"
+                },
+                {
+                    "name": "Meditation",
+                    "displayName": "Meditation",
+                    "enumValue": "Meditation"
+                },
+                {
+                    "name": "Reception",
+                    "displayName": "Reception",
+                    "enumValue": "Reception"
+                },
+                {
+                    "name": "Resting",
+                    "displayName": "Resting",
+                    "enumValue": "Resting"
+                },
+                {
+                    "name": "Stairwell",
+                    "displayName": "Stairwell",
+                    "enumValue": "Stairwell"
+                },
+                {
+                    "name": "Staff",
+                    "displayName": "Staff",
+                    "enumValue": "Staff"
+                },
+                {
+                    "name": "Storage",
+                    "displayName": "Storage",
+                    "enumValue": "Storage"
+                },
+                {
+                    "name": "Theater",
+                    "displayName": "Theater",
+                    "enumValue": "Theater"
+                },
+                {
+                    "name": "WasteManagement",
+                    "displayName": "WasteManagement",
+                    "enumValue": "WasteManagement"
+                },
+                {
+                    "name": "Workshop",
+                    "displayName": "Workshop",
+                    "enumValue": "Workshop"
+                },
+                {
+                    "name": "ConferenceRoom",
+                    "displayName": "Conference room",
+                    "enumValue": "ConferenceRoom"
+                },
+                {
+                    "name": "Staircase",
+                    "displayName": "Staircase",
+                    "enumValue": "Staircase"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "section",
+            "displayName": "Section",
+            "description": "Section of zone e.g. wing a of a building",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "type",
+            "displayName": "Type",
+            "description": "Type of the space e.g. Office",
+            "schema": "dtmi:com:bosch:bt:foundation:space:SpaceTypes;2"
+        }
+    ]
+}

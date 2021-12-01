@@ -1,0 +1,132 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Thermal Distributor",
+	"description": "Thermal distributor distributes heating and/or cooling throughout the building.",
+	"extends": "dtmi:com:bosch:bt:foundation:core:Role;2",
+	"schemas": [
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:ThermalDistributor:OperatingMode;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "Cooling",
+					"displayName": "Cooling",
+					"enumValue": "Cooling"
+				},
+				{
+					"name": "Heating",
+					"displayName": "Heating",
+					"enumValue": "Heating"
+				},
+				{
+					"name": "HeatingAndCooling",
+					"displayName": "Heating And Cooling",
+					"enumValue": "HeatingAndCooling"
+				}
+			]
+		},
+        {
+            "@id": "dtmi:com:bosch:bt:HVAC:ThermalDistributor:Medium;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "None",
+                    "displayName": "None",
+                    "enumValue": "None"
+                },
+                {
+                    "name": "Air",
+                    "displayName": "Air",
+                    "enumValue": "Air"
+                },
+                {
+                    "name": "Water",
+                    "displayName": "Water",
+                    "enumValue": "Water"
+                },
+                {
+                    "name": "Steam",
+                    "displayName": "Steam",
+                    "enumValue": "Steam"
+                },
+                {
+                    "name": "Glycol",
+                    "displayName": "Glycol",
+                    "enumValue": "Glycol"
+                },
+                {
+                    "name": "Other",
+                    "displayName": "Other",
+                    "enumValue": "Other"
+                }
+            ]
+        }
+	],
+	"contents": [
+		{
+			"@type": "Relationship",
+			"name": "Target",
+			"displayName": "Target",
+			"description": "A reference to the target equipment which has the role of a thermal distributor.",
+            "writable": true,
+			"target": "dtmi:com:bosch:bt:foundation:asset:Asset;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+		},
+		{
+			"@type": "Property",
+			"name": "OperatingMode",
+			"displayName": "Operating Mode",
+			"description": "The operating mode, which can be cooling mode or heating mode.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:ThermalDistributor:OperatingMode;2"
+		},
+		{
+			"@type": "Property",
+			"name": "Medium",
+			"displayName": "Medium",
+			"description": "The medium used for cooling or heating distribution.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:ThermalDistributor:Medium;2"
+		},
+		{
+			"@type": "Relationship",
+			"name": "ThermalSource",
+			"displayName": "Thermal Source",
+			"description": "A reference to source of the thermal energy. For Example: Hot water plant, Cold water plant etc..",
+            "writable": true,
+			"target": "dtmi:com:bosch:bt:HVAC:ThermalSource;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+		},
+		{
+			"@type": "Relationship",
+			"name": "ThermalDistributor",
+			"displayName": "Thermal Distributor",
+			"description": "This is a reference to another thermal distributor which acts as a source of the thermal energy.",
+            "writable": true,
+			"target": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+		}
+	]
+}

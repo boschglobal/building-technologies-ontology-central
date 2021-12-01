@@ -1,0 +1,8 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:DistributionCircuit;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Distribution Circuit",
+	"description": "Distribution circuit used to distribute cooling or heating throughout the building.",
+	"extends": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2"
+}

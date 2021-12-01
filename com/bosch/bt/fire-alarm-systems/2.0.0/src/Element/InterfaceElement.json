@@ -1,0 +1,79 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:InterfaceElement;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Interface Element",
+	"description": "The interface element is connected to the fire panel through an Interface Module.",
+	"extends": [
+        "dtmi:com:bosch:bt:fire:Element;2"
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:fire:InterfaceElement:ElementTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "ConventionalDevice",
+                    "displayName": "ConventionalDevice",
+                    "enumValue": "ConventionalDevice"
+                },
+                {
+                    "name": "SignallingDevice",
+                    "displayName": "SignallingDevice",
+                    "enumValue": "SignallingDevice"
+                },
+                {
+                    "name": "WirelessDevice",
+                    "displayName": "WirelessDevice",
+                    "enumValue": "WirelessDevice"
+                },
+                {
+                    "name": "ExtinguishingPanel",
+                    "displayName": "ExtinguishingPanel",
+                    "enumValue": "ExtinguishingPanel"
+                },
+                {
+                    "name": "InputOutputDevice",
+                    "displayName": "InputOutputDevice",
+                    "enumValue": "InputOutputDevice"
+                },
+                {
+                    "name": "Isolator",
+                    "displayName": "Isolator",
+                    "enumValue": "Isolator"
+                },
+                {
+                    "name": "EndOfLine",
+                    "displayName": "EndOfLine",
+                    "enumValue": "EndOfLine"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "elementType",
+            "displayName": "Element Type",
+            "description": "The type of the interface element.",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:fire:InterfaceElement:ElementTypes;2"
+        },
+        {
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The interface element is connected to an interface module.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:InterfaceModule;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

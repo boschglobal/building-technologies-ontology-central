@@ -1,0 +1,39 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:point:MultiStateDataPoint;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Multi State Data Point",
+    "description": "Data point of multi state sensor or setpoint",
+    "extends": "dtmi:com:bosch:bt:foundation:point:StateDataPoint;2",
+    "contents": [
+        {
+            "@type": "Component",
+            "name": "currentValue",
+            "displayName": "Current value",
+            "description": "Current value of the data point.",
+            "schema": "dtmi:com:bosch:bt:foundation:point:MultiStateValue;2"
+        },
+        {
+            "@type": "Property",
+            "name": "supportedStates",
+            "displayName": "Supported states",
+            "description": "Name and value of supported states",
+            "schema": {
+                "@type": "Map",
+                "mapKey": {
+                    "name": "name",
+                    "displayName": "Name",
+                    "description": "State name e.g. OFF",
+                    "schema": "string"
+                },
+                "mapValue": {
+                    "name": "value",
+                    "displayName": "Value",
+                    "description": "State value number or string e.g. OFF",
+                    "schema": "string"
+                }
+            },
+            "writable": true
+        }
+    ]
+}

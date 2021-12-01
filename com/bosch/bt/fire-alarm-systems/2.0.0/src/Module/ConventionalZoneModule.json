@@ -1,0 +1,10 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:ConventionalZoneModule;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Conventional Zone Module",
+    "description": "Module for the connection of existing conventional peripherals and provides 4 monitored conventional lines",
+	"extends": [
+        "dtmi:com:bosch:bt:fire:Module;2"
+    ]
+}

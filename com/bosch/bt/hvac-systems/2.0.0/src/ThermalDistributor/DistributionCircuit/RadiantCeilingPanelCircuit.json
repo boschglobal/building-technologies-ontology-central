@@ -1,0 +1,8 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:RadiantCeilingPanelCircuit;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Radiant Ceiling Panel Circuit",
+	"description": "Radiant ceiling panel circuit distributes heating and/or cooling throughout the building by pipes on the ceiling.",
+	"extends": "dtmi:com:bosch:bt:HVAC:DistributionCircuit;2"
+}

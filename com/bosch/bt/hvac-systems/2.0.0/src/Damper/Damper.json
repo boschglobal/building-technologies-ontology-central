@@ -1,0 +1,25 @@
+{
+    "@id": "dtmi:com:bosch:bt:HVAC:Damper;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Damper",
+    "description": "A damper used to regulate or control the flow or pressure of air.",
+	"extends": "dtmi:com:bosch:bt:foundation:core:Role;2",
+	"contents": [
+		{
+			"@type": "Relationship",
+			"name": "Target",
+			"displayName": "Target",
+			"description": "A reference to the target equipment which has the role of a damper.",
+            "writable": true,
+			"target": "dtmi:com:bosch:bt:foundation:asset:Asset;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+		}
+    ]
+}

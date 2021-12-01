@@ -1,0 +1,33 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:point:QuantityValue;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Quantity Value",
+    "description": "The value of a data point (min, max, current). Consists of the value of the point, a timestamp of the recorded value and optionally a unit defining the value.",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "value",
+            "displayName": "Value",
+            "description": "Value of the quantity data point.",
+            "writable": true,
+            "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "unit",
+            "displayName": "Unit",
+            "description": "Unit of the value",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
+            "name": "timestamp",
+            "displayName": "Timestamp",
+            "description": "Recorded at time of the data point value",
+            "writable": true,
+            "schema": "dateTime"
+        }
+    ]
+}

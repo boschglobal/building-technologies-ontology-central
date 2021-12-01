@@ -1,0 +1,164 @@
+{
+    "digitalTwinsFileInfo": {
+        "fileVersion": "1.0.0"
+    },
+    "digitalTwinsGraph": {
+        "digitalTwins": [
+            {
+                "$dtId": "building-1",
+                "$etag": "W/\"5f2488b1-be4f-4612-921b-289769b315d2\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:space:Building;2"
+                }
+            },
+            {
+                "$dtId": "xdk-2",
+                "$etag": "W/\"37d21b0d-51f1-4c3b-8aa2-d8e9f4830daf\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:samples:XDK;2"
+                }
+            },
+            {
+                "$dtId": "xdk-1",
+                "$etag": "W/\"997f4b50-1910-4ca7-9e9f-f565c19f5756\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:samples:XDK;2"
+                }
+            },
+            {
+                "$dtId": "bme280-1",
+                "$etag": "W/\"761fb9b9-b254-41ed-b82c-d1b1fb904e68\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:samples:BME280;2"
+                }
+            },
+            {
+                "$dtId": "bme280-2",
+                "$etag": "W/\"7c79f5fd-ef04-4e60-ae3d-0a91f3829c03\"",
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:samples:BME280;2"
+                }
+            },
+            {
+                "$dtId": "temp-1",
+                "$etag": "W/\"d5c4a3d6-86b2-4112-acf4-925d9aa21235\"",
+                "type": "Temperature",
+                "function": "Sensor",
+                "medium": "Air",
+                "effectiveBounds": "In",
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            },
+            {
+                "$dtId": "temp-2",
+                "$etag": "W/\"efbde26c-855c-4ffe-b2d5-ddc590e664ed\"",
+                "type": "Temperature",
+                "function": "Sensor",
+                "medium": "Air",
+                "effectiveBounds": "Out",
+                "currentValue": {
+                    "$metadata": {}
+                },
+                "minValue": {
+                    "$metadata": {}
+                },
+                "maxValue": {
+                    "$metadata": {}
+                },
+                "location": {
+                    "$metadata": {}
+                },
+                "$metadata": {
+                    "$model": "dtmi:com:bosch:bt:foundation:point:QuantityDataPoint;2"
+                }
+            }
+        ],
+        "relationships": [
+            {
+                "$relationshipId": "d2a92aa8-7a17-4cca-af95-b84ab16a94d9",
+                "$sourceId": "xdk-2",
+                "$targetId": "building-1",
+                "$relationshipName": "locatedIn",
+                "$etag": "W/\"b4b6f805-d05d-4048-b679-72d070955a7d\""
+            },
+            {
+                "$relationshipId": "786d26a9-a72f-4893-a06d-0c4da2b2d6d3",
+                "$sourceId": "bme280-1",
+                "$targetId": "xdk-1",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"5fe5a759-2198-461c-80a0-820a92e464ed\""
+            },
+            {
+                "$relationshipId": "2c9638c3-a8c1-4ae9-bef4-79b3da189e65",
+                "$sourceId": "bme280-2",
+                "$targetId": "xdk-2",
+                "$relationshipName": "isPartOf",
+                "$etag": "W/\"57c02d87-b529-4d07-960f-16abb792039d\""
+            },
+            {
+                "$relationshipId": "b3334c5a-cfaf-41fb-8474-bdfe90791a1c",
+                "$sourceId": "xdk-1",
+                "$targetId": "building-1",
+                "$relationshipName": "locatedIn",
+                "$etag": "W/\"fdb036fa-f9f2-4b3f-bb73-77f72b887720\""
+            },
+            {
+                "$relationshipId": "f217c18d-46de-4c96-a76d-01d28b82ae56",
+                "$sourceId": "temp-1",
+                "$targetId": "building-1",
+                "$relationshipName": "observes",
+                "$etag": "W/\"32db1449-eed9-456b-a1b0-d6d3149f44bb\""
+            },
+            {
+                "$relationshipId": "a1c22708-c687-4ffd-8d96-6ec832d08f51",
+                "$sourceId": "temp-1",
+                "$targetId": "bme280-1",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"e91ff24f-47ba-45fb-833e-4d5f422bab75\""
+            },
+            {
+                "$relationshipId": "88c50638-7e1b-4753-b230-6f3c4c668629",
+                "$sourceId": "temp-2",
+                "$targetId": "building-1",
+                "$relationshipName": "observes",
+                "$etag": "W/\"1f1d2288-fb84-494f-976d-99371a370a62\""
+            },
+            {
+                "$relationshipId": "9f0e1300-c81d-4c57-a574-003549ce1c9c",
+                "$sourceId": "temp-2",
+                "$targetId": "bme280-2",
+                "$relationshipName": "connectedTo",
+                "$etag": "W/\"52e7476d-6be5-453f-a25b-74e15ca9dbc1\""
+            }
+        ]
+    },
+    "digitalTwinsModels": []
+}

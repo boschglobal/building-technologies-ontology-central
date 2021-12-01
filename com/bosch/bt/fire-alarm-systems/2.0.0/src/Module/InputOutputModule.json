@@ -1,0 +1,44 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:InputOutputModule;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Input and Output Module",
+	"description": "The module is used for intput and output connectors.",
+	"extends": [
+		"dtmi:com:bosch:bt:fire:Module;2"
+	],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:fire:InputOutputModule:ModuleTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "RelayOutputs",
+                    "displayName": "8RelayOutputs",
+                    "enumValue": "RelayOutputs"
+                },
+                {
+                    "name": "MonitoredInputsAndOpenConnectorOutputs",
+                    "displayName": "8MonitoredInputsAnd8OpenConnectorOutputs",
+                    "enumValue": "MonitoredInputsAndOpenConnectorOutputs"
+                },
+                {
+                    "name": "SupervisedInputsAndRelayOutputs",
+                    "displayName": "2SupervisedInputsAnd2RelayOutputs",
+                    "enumValue": "SupervisedInputsAndRelayOutputs"
+                }
+            ]
+        }
+    ],
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "moduleType",
+            "displayName": "Module Type",
+            "description": "The type of the module.",
+            "writable": true,
+            "schema": "dtmi:com:bosch:bt:fire:InputOutputModule:ModuleTypes;2"
+        }
+    ]
+}

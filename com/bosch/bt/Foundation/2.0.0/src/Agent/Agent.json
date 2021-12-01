@@ -1,0 +1,28 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:agent:Agent;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Abstract Agent",
+    "description": "A customer, human, group, or a machine that consumes or acts upon an object, data or a service.",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+        "dtmi:com:bosch:bt:foundation:core:DigitalTwin;2"
+    ],
+    "contents": [
+        {
+            "@type": "Relationship",
+            "name": "locatedIn",
+            "displayName": "Located In",
+            "description": "The agent is located in this zone.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

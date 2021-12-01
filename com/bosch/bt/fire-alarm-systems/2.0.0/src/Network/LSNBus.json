@@ -1,0 +1,35 @@
+{
+    "@id": "dtmi:com:bosch:bt:fire:LSNBus;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "LSN Bus",
+    "description": "LSN Bus are used in the fire system to connect different LSN elements that helps to monitor the building conditions thorough different sensors",
+	"extends": [
+		"dtmi:com:bosch:bt:fire:Network;2"
+	],
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "lsnBusType",
+			"displayName": "LSN Bus Type",
+			"description": "LSN bus type.",
+            "writable": true,
+			"schema": "string"
+		},
+		{
+            "@type": "Relationship",
+            "name": "connectedTo",
+            "displayName": "Connected To",
+            "description": "The LSN bus is connected to a LSN module.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:LSNModule;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+    ]
+}

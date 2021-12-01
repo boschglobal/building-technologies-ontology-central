@@ -1,0 +1,10 @@
+{
+    "@id": "dtmi:com:bosch:bt:samples:Desk;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Desk",
+    "description": "Desk",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:asset:Asset;2"
+    ]
+}

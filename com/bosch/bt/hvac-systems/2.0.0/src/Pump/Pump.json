@@ -1,0 +1,25 @@
+{
+	"@id": "dtmi:com:bosch:bt:HVAC:Pump;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Pump",
+	"description": "A pump is a device that moves fluids (liquids or gases), or sometimes slurries, by mechanical action.",
+	"extends": "dtmi:com:bosch:bt:foundation:core:Role;2",
+	"contents": [
+		{
+			"@type": "Relationship",
+			"name": "Target",
+			"displayName": "Target",
+			"description": "A reference to the target equipment which has the role of a pump.",
+            "writable": true,
+			"target": "dtmi:com:bosch:bt:foundation:asset:Asset;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+		}
+	]
+}

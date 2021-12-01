@@ -1,0 +1,110 @@
+{
+	"@id": "dtmi:com:bosch:bt:fire:Panel;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Fire Panel",
+	"description": "The panel receives information from devices designed to detect and report fires, monitors their operational integrity and provides for automatic control of equipment, and transmission of information necessary to prepare the facility for fire based on a predetermined sequence.",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:asset:Device;2"
+	],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:fire:Panel:PanelTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+				{
+                    "name": "FPA_1200_C",
+                    "displayName": "FPA_1200_C",
+                    "enumValue": "FPA_1200_C"
+                },
+                {
+                    "name": "FPA_5000_C",
+                    "displayName": "FPA_5000_C",
+                    "enumValue": "FPA_5000_C"
+                }
+            ]
+        }
+    ],
+	"contents": [
+		{
+			"@type": "Property",
+			"name": "physicalAddress",
+			"displayName": "Physical Address",
+			"description": "A set of 4 elements (${module-id}.${loop}.${device}.${port}) to identify and address the device within the system",
+			"writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "logicalAddress",
+			"displayName": "Logical Address",
+			"description": "A set of 4 elements (${network-id}.${panel-id}.${element-type}.${element-no}.${port}) to identify and address the device within the system",
+			"writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "softwareVersion",
+			"displayName": "Software Version",
+			"description": "The current software version used in the panel.",
+			"writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "serial",
+			"displayName": "Serial",
+			"description": "The serial number of the panel.",
+			"writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "productionDate",
+			"displayName": "Production Date",
+			"description": "The date of production of the panel.",
+			"writable": true,
+			"schema": "dateTime"
+		},
+		{
+			"@type": "Property",
+			"name": "configurationDate",
+			"displayName": "Configuration Date",
+			"description": "The date of configuration of the panel.",
+			"writable": true,
+			"schema": "dateTime"
+		},
+		{
+			"@type": "Property",
+			"name": "panelType",
+			"displayName": "Panel Type",
+			"description": "The type of the panel.",
+			"writable": true,
+			"schema": "string"
+		},
+		{
+			"@type": "Property",
+			"name": "rebootReason",
+			"displayName": "Reboot Reason",
+			"description": "The reason for panel reboot.",
+			"writable": true,
+			"schema": "string"
+		},
+        {
+            "@type": "Relationship",
+            "name": "isPartOfSystem",
+            "displayName": "Is Part Of System",
+            "description": "The panel is part of the fire system.",
+            "writable": true,
+            "target": "dtmi:com:bosch:bt:fire:System;2",
+            "properties": [
+                {
+                    "@type": "Property",
+                    "name": "Name",
+                    "schema": "string"
+                }
+            ]
+        }
+	]
+}

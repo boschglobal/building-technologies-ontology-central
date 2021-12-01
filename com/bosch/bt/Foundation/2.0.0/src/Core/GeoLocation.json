@@ -1,0 +1,21 @@
+{
+	"@id": "dtmi:com:bosch:bt:foundation:core:GeoLocation;2",
+	"@type": "Interface",
+	"@context": "dtmi:dtdl:context;2",
+	"displayName": "Geo Location",
+	"description": "Geo location as latitude and longitude of a twin.",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "latitude",
+            "writable": true,
+            "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "longitude",
+            "writable": true,
+            "schema": "double"
+        }
+    ]
+}

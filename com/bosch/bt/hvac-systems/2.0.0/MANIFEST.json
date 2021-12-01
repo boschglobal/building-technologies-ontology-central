@@ -1,0 +1,6 @@
+{
+  "name": "HVAC System Ontology v2.0",
+  "dependencies": {
+    "com.bosch.bt.Foundation": "2.0.0.alpha"
+  }
+}
