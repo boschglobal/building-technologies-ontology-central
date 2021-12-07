@@ -6,8 +6,6 @@
 
 The [Bosch Building Technologies](https://www.boschbuildingtechnologies.com) **foundation ontology** defines the digital "***Foundation***" for all domain specific ontology models.
 
-**History:** The `Foundation Ontology` is the next generation of the previous [`Basic`](https://github.com/bosch-bt/ontology-central/tree/master/com/bosch/bt/Basic/1.0.0) and [`Spaces`](https://github.com/bosch-bt/ontology-central/tree/master/com/bosch/bt/Spaces/1.0.0) ontology model, therefore the ontology model has the versions number `2.0.0`.
-
 ## Motivation and Purpose
 
 The **foundation ontology** is the digital common foundation layer (a shared domain kernel) of [Bosch Building Technologies](https://www.boschbuildingtechnologies.com) domain ontology models. All the common aspects for a building digital twin are defined by this **foundation ontology**. This **foundation ontology** allows cross domain (service) considerations and enables a dynamic extension point for a `Digital Twin` by using roles.
