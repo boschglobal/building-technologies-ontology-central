@@ -167,6 +167,22 @@
 	"contents": [
 		{
 			"@type": "Property",
+			"name": "HeatingMethod",
+			"displayName": "Heating Method",
+			"description": "The AHU's heating medium for thermal transfer.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:HeatingMethod;2"
+		},
+		{
+			"@type": "Property",
+			"name": "CoolingMethod",
+			"displayName": "Cooling Method",
+			"description": "The AHU's cooling medium for thermal transfer.",
+            "writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:CoolingMethod;2"
+		},
+		{
+			"@type": "Property",
 			"name": "AirVolumeType",
 			"displayName": "Air Volume Type",
 			"description": "The ability of the AHU to adjust the volume of air flow.",

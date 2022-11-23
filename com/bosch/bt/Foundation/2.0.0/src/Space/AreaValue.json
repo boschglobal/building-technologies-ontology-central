@@ -1,0 +1,25 @@
+{
+    "@id": "dtmi:com:bosch:bt:foundation:space:AreaValue;2",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "displayName": "Area Value",
+    "description": "The value of space/building area. Consists of the value of the point and unit defining the value.",
+    "contents": [
+        {
+            "@type": "Property",
+            "name": "value",
+            "displayName": "Value",
+            "description": "Value of the quantity data point.",
+            "writable": true,
+            "schema": "double"
+        },
+        {
+            "@type": "Property",
+            "name": "unit",
+            "displayName": "Unit",
+            "description": "Unit of the value",
+            "writable": true,
+            "schema": "string"
+        }
+    ]
+}

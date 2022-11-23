@@ -49,13 +49,6 @@
             "schema": "string"
         },
         {
-            "@type": "Component",
-            "name": "location",
-            "displayName": "Location",
-            "description": "Geographic coordinate as point.",
-            "schema": "dtmi:com:bosch:bt:foundation:core:GeoLocation;2"
-        },
-        {
             "@type": "Property",
             "name": "externalIds",
             "displayName": "External identifiers",

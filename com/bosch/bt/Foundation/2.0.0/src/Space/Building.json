@@ -4,7 +4,99 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Building",
     "description": "An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity.",
-    "extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:core:AbstractTwin;2",
+        "dtmi:com:bosch:bt:foundation:core:DigitalTwin;2"
+    ],
+    "schemas": [
+        {
+            "@id": "dtmi:com:bosch:bt:foundation:space:BuildingTypes;2",
+            "@type": "Enum",
+            "valueSchema": "string",
+            "enumValues": [
+                {
+                    "name": "DataCenter",
+                    "displayName": "Data Center",
+                    "enumValue": "DataCenter"
+                },
+                {
+                    "name": "Hospital",
+                    "displayName": "Hospital",
+                    "enumValue": "Hospital"
+                },
+                {
+                    "name": "Hotel",
+                    "displayName": "Hotel",
+                    "enumValue": "Hotel"
+                },
+                {
+                    "name": "K12School",
+                    "displayName": "K-12 School",
+                    "enumValue": "K12School"
+                },
+                {
+                    "name": "MedicalOffice",
+                    "displayName": "Medical Office",
+                    "enumValue": "MedicalOffice"
+                },
+                {
+                    "name": "MultifamilyHousing",
+                    "displayName": "Multifamily Housing",
+                    "enumValue": "MultifamilyHousing"
+                },
+                {
+                    "name": "Office",
+                    "displayName": "Office",
+                    "enumValue": "Office"
+                },
+                {
+                    "name": "Parking",
+                    "displayName": "Parking",
+                    "enumValue": "Parking"
+                },
+                {
+                    "name": "ResidenceHall",
+                    "displayName": "Residence Hall",
+                    "enumValue": "ResidenceHall"
+                },
+                {
+                    "name": "RetailStore",
+                    "displayName": "RetailStore",
+                    "enumValue": "RetailStore"
+                },
+                {
+                    "name": "SeniorLiving",
+                    "displayName": "Senior Living",
+                    "enumValue": "SeniorLiving"
+                },
+                {
+                    "name": "Supermarket",
+                    "displayName": "Supermarket",
+                    "enumValue": "Supermarket"
+                },
+                {
+                    "name": "SwimmingPool",
+                    "displayName": "Swimming Pool",
+                    "enumValue": "SwimmingPool"
+                },
+                {
+                    "name": "Warehouse",
+                    "displayName": "Warehouse",
+                    "enumValue": "Warehouse"
+                },
+                {
+                    "name": "WastewaterTreatmentPlant",
+                    "displayName": "Wastewater Treatment Plant",
+                    "enumValue": "WastewaterTreatmentPlant"
+                },
+                {
+                    "name": "WorshipFacility",
+                    "displayName": "Worship Facility",
+                    "enumValue": "WorshipFacility"
+                }
+            ]
+        }
+    ],
     "contents": [
         {
             "@type": "Property",
@@ -32,6 +124,14 @@
         },
         {
             "@type": "Property",
+            "name": "postalCode",
+            "displayName": "Postal Code",
+            "description": "The postal code (if applicable).",
+            "writable": true,
+            "schema": "string"
+        },
+        {
+            "@type": "Property",
             "name": "city",
             "displayName": "city",
             "description": "A city of the customer's building (if applicable)",
@@ -45,6 +145,27 @@
             "description": "The address of the site (if applicable).",
             "writable": true,
             "schema": "string"
+        },
+        {
+            "@type": "Component",
+            "name": "location",
+            "displayName": "Location",
+            "description": "Geographic coordinate as point.",
+            "schema": "dtmi:com:bosch:bt:foundation:core:GeoLocation;2"
+        },
+        {
+            "@type": "Property",
+            "name": "type",
+            "displayName": "Type",
+            "description": "Type of the building e.g. Office",
+            "schema": "dtmi:com:bosch:bt:foundation:space:BuildingTypes;2"
+        },
+        {
+            "@type": "Component",
+            "name": "area",
+            "displayName": "Area",
+            "description": "Area of the building",
+            "schema": "dtmi:com:bosch:bt:foundation:space:AreaValue;2"
         },
         {
             "@type": "Relationship",

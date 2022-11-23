@@ -20,119 +20,19 @@
                     "enumValue": "Atrium"
                 },
                 {
-                    "name": "Hospital",
-                    "displayName": "Hospital",
-                    "enumValue": "Hospital"
-                },
-                {
-                    "name": "School",
-                    "displayName": "School",
-                    "enumValue": "School"
-                },
-                {
-                    "name": "ShoppingMall",
-                    "displayName": "ShoppingMall",
-                    "enumValue": "ShoppingMall"
-                },
-                {
-                    "name": "Stadium",
-                    "displayName": "Stadium",
-                    "enumValue": "Stadium"
-                },
-                {
-                    "name": "VirtualBuilding",
-                    "displayName": "VirtualBuilding",
-                    "enumValue": "VirtualBuilding"
-                },
-                {
-                    "name": "Entrance",
-                    "displayName": "Entrance",
-                    "enumValue": "Entrance"
-                },
-                {
-                    "name": "MainEntrance",
-                    "displayName": "MainEntrance",
-                    "enumValue": "MainEntrance"
-                },
-                {
-                    "name": "ServiceEntrance",
-                    "displayName": "ServiceEntrance",
-                    "enumValue": "ServiceEntrance"
-                },
-                {
-                    "name": "Cafeteria",
-                    "displayName": "Cafeteria",
-                    "enumValue": "Cafeteria"
-                },
-                {
-                    "name": "Cooking",
-                    "displayName": "Cooking",
-                    "enumValue": "Cooking"
-                },
-                {
                     "name": "Bar",
                     "displayName": "Bar",
                     "enumValue": "Bar"
                 },
                 {
-                    "name": "Garage",
-                    "displayName": "Garage",
-                    "enumValue": "Garage"
+                    "name": "BreakRoom",
+                    "displayName": "BreakRoom",
+                    "enumValue": "BreakRoom"
                 },
                 {
-                    "name": "Laboratory",
-                    "displayName": "Laboratory",
-                    "enumValue": "Laboratory"
-                },
-                {
-                    "name": "Office",
-                    "displayName": "Office",
-                    "enumValue": "Office"
-                },
-                {
-                    "name": "PhoneBooth",
-                    "displayName": "PhoneBooth",
-                    "enumValue": "PhoneBooth"
-                },
-                {
-                    "name": "Flexdesk",
-                    "displayName": "Flexdesk",
-                    "enumValue": "Flexdesk"
-                },
-                {
-                    "name": "DisabledToilet",
-                    "displayName": "DisabledToilet",
-                    "enumValue": "DisabledToilet"
-                },
-                {
-                    "name": "Toilet",
-                    "displayName": "Toilet",
-                    "enumValue": "Toilet"
-                },
-                {
-                    "name": "Retail",
-                    "displayName": "Retail",
-                    "enumValue": "Retail"
-                },
-                {
-                    "name": "DataServer",
-                    "displayName": "DataServer",
-                    "enumValue": "DataServer"
-                },
-                {
-                    "name": "Electricity",
-                    "displayName": "Electricity",
-                    "enumValue": "Electricity"
-                },
-                {
-                    "name": "Sprinkler",
-                    "displayName": "Sprinkler",
-                    "enumValue": "Sprinkler"
-                },
-                {
-                    "name": "Utilities",
-                    "displayName": "Utilities",
-                    "enumValue": "Utilities"
+                    "name": "Cafeteria",
+                    "displayName": "Cafeteria",
+                    "enumValue": "Cafeteria"
                 },
                 {
                     "name": "Cleaning",
@@ -145,14 +45,44 @@
                     "enumValue": "Conference"
                 },
                 {
+                    "name": "ConferenceRoom",
+                    "displayName": "ConferenceRoom",
+                    "enumValue": "ConferenceRoom"
+                },
+                {
                     "name": "Conversation",
                     "displayName": "Conversation",
                     "enumValue": "Conversation"
                 },
                 {
-                    "name": "Copying",
+                    "name": "CopyRoom",
                     "displayName": "Copying",
                     "enumValue": "Copying"
+                },
+                {
+                    "name": "ConferenceRoom",
+                    "displayName": "ConferenceRoom",
+                    "enumValue": "ConferenceRoom"
+                },
+                {
+                    "name": "Cooking",
+                    "displayName": "Cooking",
+                    "enumValue": "Cooking"
+                },
+                {
+                    "name": "DataServer",
+                    "displayName": "DataServer",
+                    "enumValue": "DataServer"
+                },
+                {
+                    "name": "DisabledToilet",
+                    "displayName": "DisabledToilet",
+                    "enumValue": "DisabledToilet"
+                },
+                {
+                    "name": "Electricity",
+                    "displayName": "Electricity",
+                    "enumValue": "Electricity"
                 },
                 {
                     "name": "Elevator",
@@ -160,14 +90,94 @@
                     "enumValue": "Elevator"
                 },
                 {
+                    "name": "ElevatorLobby",
+                    "displayName": "ElevatorLobby",
+                    "enumValue": "ElevatorLobby"
+                },
+                {
+                    "name": "Entrance",
+                    "displayName": "Entrance",
+                    "enumValue": "Entrance"
+                },
+                {
+                    "name": "EquipmentRoom",
+                    "displayName": "EquipmentRoom",
+                    "enumValue": "EquipmentRoom"
+                },
+                {
+                    "name": "Flexdesk",
+                    "displayName": "Flexdesk",
+                    "enumValue": "Flexdesk"
+                },
+                {
+                    "name": "Garage",
+                    "displayName": "Garage",
+                    "enumValue": "Garage"
+                },
+                {
+                    "name": "Hallway",
+                    "displayName": "Hallway",
+                    "enumValue": "Hallway"
+                },
+                {
+                    "name": "Hospital",
+                    "displayName": "Hospital",
+                    "enumValue": "Hospital"
+                },
+                {
+                    "name": "Laboratory",
+                    "displayName": "Laboratory",
+                    "enumValue": "Laboratory"
+                },
+                {
                     "name": "Library",
                     "displayName": "Library",
                     "enumValue": "Library"
                 },
                 {
+                    "name": "Lobby",
+                    "displayName": "Lobby",
+                    "enumValue": "Lobby"
+                },
+                {
+                    "name": "LockerRoom",
+                    "displayName": "LockerRoom",
+                    "enumValue": "LockerRoom"
+                },
+                {
+                    "name": "MainEntrance",
+                    "displayName": "MainEntrance",
+                    "enumValue": "MainEntrance"
+                },
+                {
                     "name": "Meditation",
                     "displayName": "Meditation",
                     "enumValue": "Meditation"
+                },
+                {
+                    "name": "Office",
+                    "displayName": "Office",
+                    "enumValue": "Office"
+                },
+                {
+                    "name": "OpenOffice",
+                    "displayName": "OpenOffice",
+                    "enumValue": "OpenOffice"
+                },
+                {
+                    "name": "OperatingRoom",
+                    "displayName": "OperatingRoom",
+                    "enumValue": "OperatingRoom"
+                },
+                {
+                    "name": "PatientRoom",
+                    "displayName": "PatientRoom",
+                    "enumValue": "PatientRoom"
+                },
+                {
+                    "name": "PhoneBooth",
+                    "displayName": "PhoneBooth",
+                    "enumValue": "PhoneBooth"
                 },
                 {
                     "name": "Reception",
@@ -180,6 +190,51 @@
                     "enumValue": "Resting"
                 },
                 {
+                    "name": "Restroom",
+                    "displayName": "Restroom",
+                    "enumValue": "Restroom"
+                },
+                {
+                    "name": "Retail",
+                    "displayName": "Retail",
+                    "enumValue": "Retail"
+                },
+                {
+                    "name": "School",
+                    "displayName": "School",
+                    "enumValue": "School"
+                },
+                {
+                    "name": "ServerRoom",
+                    "displayName": "ServerRoom",
+                    "enumValue": "ServerRoom"
+                },
+                {
+                    "name": "ServiceEntrance",
+                    "displayName": "ServiceEntrance",
+                    "enumValue": "ServiceEntrance"
+                },
+                {
+                    "name": "ShoppingMall",
+                    "displayName": "ShoppingMall",
+                    "enumValue": "ShoppingMall"
+                },
+                {
+                    "name": "Sprinkler",
+                    "displayName": "Sprinkler",
+                    "enumValue": "Sprinkler"
+                },
+                {
+                    "name": "Stadium",
+                    "displayName": "Stadium",
+                    "enumValue": "Stadium"
+                },
+                {
+                    "name": "Staircase",
+                    "displayName": "Staircase",
+                    "enumValue": "Staircase"
+                },
+                {
                     "name": "Stairwell",
                     "displayName": "Stairwell",
                     "enumValue": "Stairwell"
@@ -188,6 +243,11 @@
                     "name": "Staff",
                     "displayName": "Staff",
                     "enumValue": "Staff"
+                },
+                {
+                    "name": "Stairwell",
+                    "displayName": "Stairwell",
+                    "enumValue": "Stairwell"
                 },
                 {
                     "name": "Storage",
@@ -200,6 +260,21 @@
                     "enumValue": "Theater"
                 },
                 {
+                    "name": "Toilet",
+                    "displayName": "Toilet",
+                    "enumValue": "Toilet"
+                },
+                {
+                    "name": "Utilities",
+                    "displayName": "Utilities",
+                    "enumValue": "Utilities"
+                },
+                {
+                    "name": "VirtualBuilding",
+                    "displayName": "VirtualBuilding",
+                    "enumValue": "VirtualBuilding"
+                },
+                {
                     "name": "WasteManagement",
                     "displayName": "WasteManagement",
                     "enumValue": "WasteManagement"
@@ -208,16 +283,6 @@
                     "name": "Workshop",
                     "displayName": "Workshop",
                     "enumValue": "Workshop"
-                },
-                {
-                    "name": "ConferenceRoom",
-                    "displayName": "Conference room",
-                    "enumValue": "ConferenceRoom"
-                },
-                {
-                    "name": "Staircase",
-                    "displayName": "Staircase",
-                    "enumValue": "Staircase"
                 }
             ]
         }
