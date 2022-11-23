@@ -212,6 +212,51 @@
                     "name": "Delta",
                     "displayName": "Delta",
                     "enumValue": "Delta"
+                },
+                {
+                    "name": "Effective",
+                    "displayName": "Effective",
+                    "enumValue": "Effective"
+                },
+                {
+                    "name": "Occupied",
+                    "displayName": "Occupied",
+                    "enumValue": "Occupied"
+                },
+                {
+                    "name": "Unoccupied",
+                    "displayName": "Unoccupied",
+                    "enumValue": "Unoccupied"
+                },
+                {
+                    "name": "Standby",
+                    "displayName": "Standby",
+                    "enumValue": "Standby"
+                },
+                {
+                    "name": "Maximum",
+                    "displayName": "Maximum",
+                    "enumValue": "Maximum"
+                },
+                {
+                    "name": "Minimum",
+                    "displayName": "Minimum",
+                    "enumValue": "Minimum"
+                },
+                {
+                    "name": "Standby",
+                    "displayName": "Standby",
+                    "enumValue": "Standby"
+                },
+                {
+                    "name": "Heating",
+                    "displayName": "Heating",
+                    "enumValue": "Heating"
+                },
+                {
+                    "name": "Cooling",
+                    "displayName": "Cooling",
+                    "enumValue": "Cooling"
                 }
             ]
         },
@@ -246,6 +291,10 @@
                     "name": "Motion",
                     "enumValue": "Motion",
                     "displayName": "Motion"
+                },{
+                    "name": "Position",
+                    "enumValue": "Position",
+                    "displayName": "Position"
                 },
                 {
                     "name": "Luminance",
@@ -281,6 +330,26 @@
                     "name": "DewpointTemperature",
                     "enumValue": "DewpointTemperature",
                     "displayName": "DewpointTemperature"
+                },
+                {
+                    "name": "WetBulbTemperature",
+                    "enumValue": "WetBulbTemperature",
+                    "displayName": "WetBulbTemperature"
+                },
+                {
+                    "name": "Damper",
+                    "enumValue": "Damper",
+                    "displayName": "Damper"
+                },
+                {
+                    "name": "Cooling",
+                    "enumValue": "Cooling",
+                    "displayName": "Cooling"
+                },
+                {
+                    "name": "Heating",
+                    "enumValue": "Heating",
+                    "displayName": "Heating"
                 },
                 {
                     "name": "Frost",
@@ -341,7 +410,12 @@
                     "name": "Occupancy",
                     "enumValue": "Occupancy",
                     "displayName": "Occupancy"
-                },    
+                },
+                {
+                    "name": "PPM",
+                    "enumValue": "PPM",
+                    "displayName": "PPM"
+                },
                 {
                     "name": "Power",
                     "enumValue": "Power",

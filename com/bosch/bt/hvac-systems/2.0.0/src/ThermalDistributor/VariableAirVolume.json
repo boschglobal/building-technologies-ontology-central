@@ -93,6 +93,14 @@
 	"contents": [
 		{
 			"@type": "Property",
+			"name": "HeatingAndCoolingMethod",
+			"displayName": "Heating and Cooling Method",
+			"description": "The method for tempering the air used to control space temperature.",
+			"writable": true,
+			"schema": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:HeatingAndCoolingMethod;2"
+		},
+		{
+			"@type": "Property",
 			"name": "AirCircuit",
 			"displayName": "Air Circuit Configuration",
 			"description": "The method used for pulling air using fan from outside the primary airflow.",
