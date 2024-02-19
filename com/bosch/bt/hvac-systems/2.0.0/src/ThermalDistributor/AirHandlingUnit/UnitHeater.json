@@ -4,5 +4,7 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Unit Heater",
 	"description": "Unit Heater is a type of AHU which heats the air.",
-	"extends": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit;2"
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:AirHandlingUnit;2"
+	]
 }

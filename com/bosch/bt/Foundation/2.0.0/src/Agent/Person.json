@@ -4,5 +4,7 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Person",
     "description": "An individual human being.",
-	"extends": "dtmi:com:bosch:bt:foundation:agent:Agent;2"
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:agent:Agent;2"
+    ]
 }

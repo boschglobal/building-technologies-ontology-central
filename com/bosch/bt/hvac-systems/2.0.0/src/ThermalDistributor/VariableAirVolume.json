@@ -4,7 +4,9 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Variable Air Volume",
 	"description": "Variable Air Volume supply duct equipment.",
-	"extends": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2",
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:ThermalDistributor;2"
+	],
 	"schemas": [
 		{
 			"@id": "dtmi:com:bosch:bt:HVAC:VariableAirVolume:HeatingAndCoolingMethod;2",
@@ -26,11 +28,11 @@
 					"displayName": "Hot Water Reheating",
 					"enumValue": "HotWaterReheat"
 				},
-                {
-                    "name": "Other",
-                    "displayName": "Other",
-                    "enumValue": "Other"
-                }
+				{
+					"name": "Other",
+					"displayName": "Other",
+					"enumValue": "Other"
+				}
 			]
 		},
 		{

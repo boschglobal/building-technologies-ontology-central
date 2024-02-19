@@ -4,7 +4,9 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Binary Data Point",
     "description": "Data point of setpoint or sensor with a binary value",
-    "extends": "dtmi:com:bosch:bt:foundation:point:StateDataPoint;2",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:point:StateDataPoint;2"
+    ],
     "contents": [
         {
             "@type": "Component",

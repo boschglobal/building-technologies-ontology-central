@@ -4,7 +4,9 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Storey",
     "description": "A level part of a building alias floor or level.",
-    "extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:space:Zone;2"
+    ],
     "contents": [
         {
             "@type": "Property",

@@ -4,5 +4,7 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Edge Appliance",
 	"description": "Provides a definition of a Bosch Edge Appliance",
-	"extends": "dtmi:com:bosch:bt:foundation:asset:Device;2"
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:asset:Device;2"
+	]
 }

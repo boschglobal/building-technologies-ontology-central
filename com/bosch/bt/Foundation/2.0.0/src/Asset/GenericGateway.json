@@ -4,7 +4,9 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Generic Gateway",
 	"description": "Provides a generic definition of a gateway used for communicating with cloud services.",
-	"extends": "dtmi:com:bosch:bt:foundation:asset:Device;2",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:asset:Device;2"
+	],
 	"contents": [
 		{
 			"@type": "Property",

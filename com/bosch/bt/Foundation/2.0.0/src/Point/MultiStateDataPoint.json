@@ -4,7 +4,9 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Multi State Data Point",
     "description": "Data point of multi state sensor or setpoint",
-    "extends": "dtmi:com:bosch:bt:foundation:point:StateDataPoint;2",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:point:StateDataPoint;2"
+    ],
     "contents": [
         {
             "@type": "Component",

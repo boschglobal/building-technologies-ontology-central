@@ -4,37 +4,39 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Zone",
 	"description": "A conditioned area of a building.",
-	"extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:space:Zone;2"
+	],
 	"contents": [
 		{
 			"@type": "Relationship",
 			"name": "ServedBy",
 			"displayName": "Served By",
 			"description": "This is a reference the equipment serving the zone (AHU, VAV etc.).",
-            "writable": true,
+			"writable": true,
 			"target": "dtmi:com:bosch:bt:foundation:asset:Asset;2",
-            "properties": [
-                {
-                    "@type": "Property",
-                    "name": "Name",
-                    "schema": "string"
-                }
-            ]
+			"properties": [
+				{
+					"@type": "Property",
+					"name": "Name",
+					"schema": "string"
+				}
+			]
 		},
 		{
 			"@type": "Relationship",
 			"name": "ConsistsOf",
 			"displayName": "Consists Of",
 			"description": "One or more spaces which make up the HVAC Zone.",
-            "writable": true,
+			"writable": true,
 			"target": "dtmi:com:bosch:bt:foundation:space:Zone;2",
-            "properties": [
-                {
-                    "@type": "Property",
-                    "name": "Name",
-                    "schema": "string"
-                }
-            ]
+			"properties": [
+				{
+					"@type": "Property",
+					"name": "Name",
+					"schema": "string"
+				}
+			]
 		}
 	]
 }

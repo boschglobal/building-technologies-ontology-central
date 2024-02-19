@@ -4,5 +4,7 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "ChilledWaterPump",
 	"description": "A chilled water pump is a device that moves chilled water, by mechanical action.",
-	"extends": "dtmi:com:bosch:bt:HVAC:Pump;2"
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:Pump;2"
+	]
 }

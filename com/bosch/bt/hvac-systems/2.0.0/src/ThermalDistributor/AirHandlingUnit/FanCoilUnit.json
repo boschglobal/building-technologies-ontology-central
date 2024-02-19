@@ -4,5 +4,7 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Fan Coil Unit",
 	"description": "Fan Coil Unit is a type of AHU which heats the air.",
-	"extends": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit;2"	
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:AirHandlingUnit;2"
+	]
 }

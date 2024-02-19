@@ -4,5 +4,7 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Backdraft Damper",
     "description": "A damper used to regulate or control the flow or pressure of backdraft.",
-    "extends": "dtmi:com:bosch:bt:HVAC:Damper;2"
+    "extends": [
+        "dtmi:com:bosch:bt:HVAC:Damper;2"
+    ]
 }
