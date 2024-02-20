@@ -4,5 +4,7 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Department",
     "description": "Department of a company",
-    "extends": "dtmi:com:bosch:bt:foundation:agent:Organization;2"
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:agent:Organization;2"
+    ]
 }

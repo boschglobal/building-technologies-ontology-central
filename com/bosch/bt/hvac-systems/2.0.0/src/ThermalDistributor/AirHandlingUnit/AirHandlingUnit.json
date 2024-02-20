@@ -4,7 +4,9 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Air Handling Unit",
 	"description": "Air Handling Unit heats and/or cools air.",
-	"extends": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2",
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:ThermalDistributor;2"
+	],
 	"schemas": [
 		{
 			"@id": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:HeatingMethod;2",
@@ -41,11 +43,11 @@
 					"displayName": "Direct Expansion",
 					"enumValue": "DirectExpansion"
 				},
-                {
-                    "name": "Other",
-                    "displayName": "Other",
-                    "enumValue": "Other"
-                }
+				{
+					"name": "Other",
+					"displayName": "Other",
+					"enumValue": "Other"
+				}
 			]
 		},
 		{
@@ -68,11 +70,11 @@
 					"displayName": "Direct Expansion",
 					"enumValue": "DirectExpansion"
 				},
-                {
-                    "name": "Other",
-                    "displayName": "Other",
-                    "enumValue": "Other"
-                }
+				{
+					"name": "Other",
+					"displayName": "Other",
+					"enumValue": "Other"
+				}
 			]
 		},
 		{
@@ -170,7 +172,7 @@
 			"name": "AirVolumeType",
 			"displayName": "Air Volume Type",
 			"description": "The ability of the AHU to adjust the volume of air flow.",
-            "writable": true,
+			"writable": true,
 			"schema": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:AirVolumeType;2"
 		},
 		{
@@ -178,7 +180,7 @@
 			"name": "ZoneDeliveryType",
 			"displayName": "Zone Delivery Type",
 			"description": "The system used by the AHU to deliver air to the zones.",
-            "writable": true,
+			"writable": true,
 			"schema": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:ZoneDeliveryType;2"
 		},
 		{
@@ -186,7 +188,7 @@
 			"name": "DuctWorkConfiguration",
 			"displayName": "Duct Work Configuration",
 			"description": "The duct work configuration used by the AHU.",
-            "writable": true,
+			"writable": true,
 			"schema": "dtmi:com:bosch:bt:HVAC:AirHandlingUnit:DuctWorkConfiguration;2"
 		}
 	]

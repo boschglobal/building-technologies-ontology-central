@@ -4,7 +4,9 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Quantity Data Point",
     "description": "Data point with quantity and unit",
-    "extends": "dtmi:com:bosch:bt:foundation:point:DataPoint;2",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:point:DataPoint;2"
+    ],
     "contents": [
         {
             "@type": "Component",

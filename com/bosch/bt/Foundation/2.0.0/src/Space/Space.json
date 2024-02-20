@@ -4,7 +4,9 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Space",
     "description": "Physical space in a storey, for example.",
-    "extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:space:Zone;2"
+    ],
     "contents": [
         {
             "@type": "Relationship",

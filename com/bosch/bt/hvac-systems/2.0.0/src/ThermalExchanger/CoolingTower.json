@@ -4,7 +4,9 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "CoolingTower",
 	"description": "Cooling tower used to transfer process waste heat to the atmosphere.",
-	"extends": "dtmi:com:bosch:bt:HVAC:ThermalExchanger;2",
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:ThermalExchanger;2"
+	],
 	"schemas": [
 		{
 			"@id": "dtmi:com:bosch:bt:HVAC:CoolingTower:LoopType;2",
@@ -30,7 +32,7 @@
 			"name": "LoopType",
 			"displayName": "Loop Type",
 			"description": "The loop type of the cooling tower.",
-            "writable": true,
+			"writable": true,
 			"schema": "dtmi:com:bosch:bt:HVAC:CoolingTower:LoopType;2"
 		}
 	]

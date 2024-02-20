@@ -4,7 +4,9 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Thermal Exchanger",
 	"description": "Thermal exchanger is used to transfer heat/cold between two or more medium. Thermal exchangers are used in both cooling and heating processes.",
-	"extends": "dtmi:com:bosch:bt:foundation:asset:Asset;2",
+	"extends": [
+		"dtmi:com:bosch:bt:foundation:asset:Asset;2"
+	],
 	"schemas": [
 		{
 			"@id": "dtmi:com:bosch:bt:HVAC:ThermalExchanger:OperatingMode;2",
@@ -28,43 +30,43 @@
 				}
 			]
 		},
-        {
-            "@id": "dtmi:com:bosch:bt:HVAC:ThermalExchanger:Medium;2",
-            "@type": "Enum",
-            "valueSchema": "string",
-            "enumValues": [
-                {
-                    "name": "None",
-                    "displayName": "None",
-                    "enumValue": "None"
-                },
-                {
-                    "name": "Air",
-                    "displayName": "Air",
-                    "enumValue": "Air"
-                },
-                {
-                    "name": "Water",
-                    "displayName": "Water",
-                    "enumValue": "Water"
-                },
-                {
-                    "name": "Steam",
-                    "displayName": "Steam",
-                    "enumValue": "Steam"
-                },
-                {
-                    "name": "Glycol",
-                    "displayName": "Glycol",
-                    "enumValue": "Glycol"
-                },
-                {
-                    "name": "Other",
-                    "displayName": "Other",
-                    "enumValue": "Other"
-                }
-            ]
-        }
+		{
+			"@id": "dtmi:com:bosch:bt:HVAC:ThermalExchanger:Medium;2",
+			"@type": "Enum",
+			"valueSchema": "string",
+			"enumValues": [
+				{
+					"name": "None",
+					"displayName": "None",
+					"enumValue": "None"
+				},
+				{
+					"name": "Air",
+					"displayName": "Air",
+					"enumValue": "Air"
+				},
+				{
+					"name": "Water",
+					"displayName": "Water",
+					"enumValue": "Water"
+				},
+				{
+					"name": "Steam",
+					"displayName": "Steam",
+					"enumValue": "Steam"
+				},
+				{
+					"name": "Glycol",
+					"displayName": "Glycol",
+					"enumValue": "Glycol"
+				},
+				{
+					"name": "Other",
+					"displayName": "Other",
+					"enumValue": "Other"
+				}
+			]
+		}
 	],
 	"contents": [
 		{
@@ -72,7 +74,7 @@
 			"name": "OperatingMode",
 			"displayName": "Operating Mode",
 			"description": "The operating mode, which can be cooling mode or heating mode.",
-            "writable": true,
+			"writable": true,
 			"schema": "dtmi:com:bosch:bt:HVAC:ThermalExchanger:OperatingMode;2"
 		},
 		{
@@ -80,7 +82,7 @@
 			"name": "SourceMedium",
 			"displayName": "Source Medium",
 			"description": "The source medium in the thermal exchange.",
-            "writable": true,
+			"writable": true,
 			"schema": "dtmi:com:bosch:bt:HVAC:ThermalExchanger:Medium;2"
 		},
 		{
@@ -88,7 +90,7 @@
 			"name": "DestinationMedium",
 			"displayName": "Destination Medium",
 			"description": "The destination medium in the thermal exchange.",
-            "writable": true,
+			"writable": true,
 			"schema": "dtmi:com:bosch:bt:HVAC:ThermalExchanger:Medium;2"
 		},
 		{
@@ -96,60 +98,60 @@
 			"name": "Source",
 			"displayName": "Source",
 			"description": "A reference to source of the thermal energy.",
-            "writable": true,
+			"writable": true,
 			"target": "dtmi:com:bosch:bt:HVAC:ThermalSource;2",
-            "properties": [
-                {
-                    "@type": "Property",
-                    "name": "Name",
-                    "schema": "string"
-                }
-            ]
+			"properties": [
+				{
+					"@type": "Property",
+					"name": "Name",
+					"schema": "string"
+				}
+			]
 		},
 		{
 			"@type": "Relationship",
 			"name": "Destination",
 			"displayName": "Destination",
 			"description": "A reference to source of the thermal energy.",
-            "writable": true,
+			"writable": true,
 			"target": "dtmi:com:bosch:bt:HVAC:ThermalSource;2",
-            "properties": [
-                {
-                    "@type": "Property",
-                    "name": "Name",
-                    "schema": "string"
-                }
-            ]
+			"properties": [
+				{
+					"@type": "Property",
+					"name": "Name",
+					"schema": "string"
+				}
+			]
 		},
 		{
 			"@type": "Relationship",
 			"name": "SourceDistributor",
 			"displayName": "Source Distributor",
 			"description": "This is a reference to source thermal distributor which acts as a source of the thermal energy.",
-            "writable": true,
+			"writable": true,
 			"target": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2",
-            "properties": [
-                {
-                    "@type": "Property",
-                    "name": "Name",
-                    "schema": "string"
-                }
-            ]
+			"properties": [
+				{
+					"@type": "Property",
+					"name": "Name",
+					"schema": "string"
+				}
+			]
 		},
 		{
 			"@type": "Relationship",
 			"name": "DestinationDistributor",
 			"displayName": "Destination Distributor",
 			"description": "This is a reference to destination thermal distributor which acts as a source of the thermal energy.",
-            "writable": true,
+			"writable": true,
 			"target": "dtmi:com:bosch:bt:HVAC:ThermalDistributor;2",
-            "properties": [
-                {
-                    "@type": "Property",
-                    "name": "Name",
-                    "schema": "string"
-                }
-            ]
+			"properties": [
+				{
+					"@type": "Property",
+					"name": "Name",
+					"schema": "string"
+				}
+			]
 		}
 	]
 }

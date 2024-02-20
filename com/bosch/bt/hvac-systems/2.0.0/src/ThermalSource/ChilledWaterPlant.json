@@ -4,5 +4,7 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "Chilled Water Plant",
 	"description": "Chilled Water Plant used to generate chilled water.",
-	"extends": "dtmi:com:bosch:bt:HVAC:ThermalSource;2"
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:ThermalSource;2"
+	]
 }

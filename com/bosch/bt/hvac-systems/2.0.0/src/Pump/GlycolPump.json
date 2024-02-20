@@ -4,5 +4,7 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "GlycolPump",
 	"description": "A glycol pump is a device that moves glycol, by mechanical action.",
-	"extends": "dtmi:com:bosch:bt:HVAC:Pump;2"
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:Pump;2"
+	]
 }

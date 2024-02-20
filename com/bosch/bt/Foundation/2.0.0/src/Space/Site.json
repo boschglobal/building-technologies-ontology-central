@@ -4,7 +4,9 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Site",
     "description": "A site is intended to contain or contains one or more buildings.",
-    "extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:space:Zone;2"
+    ],
     "contents": [
         {
             "@type": "Property",
@@ -21,6 +23,6 @@
             "description": "Default country (ISO 3166-1) of the site is located in. Country code can be overridden in the buildings of the site.",
             "writable": true,
             "schema": "string"
-        }   
+        }
     ]
 }

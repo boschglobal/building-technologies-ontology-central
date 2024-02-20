@@ -4,7 +4,9 @@
     "@context": "dtmi:dtdl:context;2",
     "displayName": "Building",
     "description": "An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity.",
-    "extends": "dtmi:com:bosch:bt:foundation:space:Zone;2",
+    "extends": [
+        "dtmi:com:bosch:bt:foundation:space:Zone;2"
+    ],
     "contents": [
         {
             "@type": "Property",

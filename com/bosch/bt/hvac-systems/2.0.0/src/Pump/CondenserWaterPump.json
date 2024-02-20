@@ -4,5 +4,7 @@
 	"@context": "dtmi:dtdl:context;2",
 	"displayName": "CondensedWaterPump",
 	"description": "A condenser water pump is a device that moves condenser water, by mechanical action.",
-	"extends": "dtmi:com:bosch:bt:HVAC:Pump;2"
+	"extends": [
+		"dtmi:com:bosch:bt:HVAC:Pump;2"
+	]
 }
